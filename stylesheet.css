@@ -32,6 +32,71 @@ h3 {}
 ##############################
 */
 
+/*#######  HEADER   #######*/
+
+header img {
+    width: 20vw;
+    left: 40vw;
+    z-index: 110;
+    position: absolute;
+    top: 1vw;
+
+}
+
+#header_bar {
+    width: 100vw;
+    height: 12vw;
+    background-color: #333;
+    position: absolute;
+    top: 5vw;
+    z-index: 100;
+}
+
+/*###  NAVIGATION MENU  ###*/
+
+#main_nav {
+    z-index: 150;
+    position: fixed;
+}
+
+#nav_content {
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 150;
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+#nav_content form {
+    margin: 50px;
+}
+
+#nav_content button {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8em;
+    width: 100%;
+}
+
+#burger {
+    width: 12vw;
+    height: 12vw;
+    top: 5vw;
+    left: 300px;
+    background-color: rgba(50, 50, 50, 0.8);
+    position: absolute;
+    z-index: 150;
+}
+
+#burger div {
+    background-color: #fff;
+    width: 10vw;
+    height: 1vw;
+    margin: 2.2vw 1vw;
+}
+
 /*#######  FORSIDE  #######*/
 
 /*######  PRODUKTER  ######*/

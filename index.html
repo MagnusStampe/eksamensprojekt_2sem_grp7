@@ -1,36 +1,15 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>One Funky Furniture</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-
-
-    <script>
-        let billede = [];
-        document.addEventListener("DOMContentLoaded", hentJson);
-
-        async function hentJson() {
-            let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/lookbook");
-            //let jsonData = await fetch("test.json");
-            billede = await jsonData.json();
-
-            jsonInput();
-
-        }
-
-        function jsonInput() {
-            billede.forEach(bil => {
-                console.log(bil.acf.billede.url);
-
-            });
-        }
-    </script>
+    <script src=""></script>
 </body>
 
 </html>
