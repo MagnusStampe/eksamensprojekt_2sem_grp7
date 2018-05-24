@@ -26,3 +26,14 @@ async function hentHeader() {
 
     document.querySelector("#burger").addEventListener("click", toggleMenu);
 };
+
+
+
+async function hentFooter() {
+    let footerData = await fetch("footer.html");
+    let footer = await footerData.text();
+    document.querySelector("footer").innerHTML = footer;
+    document.querySelector("footer").parentNode.appendChild(document.querySelector("footer"));
+
+
+};
