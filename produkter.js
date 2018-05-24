@@ -6,13 +6,26 @@ async function hentJson() {
     //let jsonData = await fetch("test.json");
     billede = await jsonData.json();
 
-    jsonInput();
+    visProdukter();
 
 }
 
-function jsonInput() {
+function visProdukter() {
+
+    let dest = document.querySelector("[produkter-dest]");
+    let temp = document.querySelector("[data-template]");
+
+
+
     billede.forEach(bil => {
         console.log(bil.acf.billede.url);
+        let klon = temp.cloneNode(true).content;
+
+        klon.querySelector("[data-billede]").src = bil.acf.billede.url;
+        klon.querySelector("[data-billede]").alt = bil.acf.billede.url;
+        dest.appendChild(klon);
+
 
     });
+
 }
