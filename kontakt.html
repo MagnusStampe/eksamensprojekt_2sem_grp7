@@ -11,18 +11,20 @@
 <body>
     <header class="include"> </header>
     <nav class="include"> </nav>
+
     <main id="kontakt">
         <h1>Rådgivning og kontakt</h1>
-        <div id="kontakt_box">
-            <button>Totalløsning</button>
-            <button>Enkelt møbel</button>
-            <button>Andet</button>
-            <address>Gl. Kongevej 39A <br>1610 København V
-        </address>
+        <section id="kontakt_box">
+            <button data-total>Totalløsning</button>
+            <button data-enkelt>Enkelt møbel</button>
+            <button data-andet>Andet</button>
+        </section>
+        <section id="info_box">
+            <address>Gl. Kongevej 39A <br>1610 København V</address>
             <p>+45 53 63 20 91</p>
             <p>E-mail: Kbh@Onefunkyfurniture.dk</p>
             <p>Alle hverdage 10-17 <br> lørdag efter aftale.</p>
-        </div>
+        </section>
 
         <div class="singlemap">
             <div id="map"></div>
@@ -30,6 +32,8 @@
     </main>
     <footer class="include"></footer>
 
+    <div id="baggrund_overlay"></div>
+    <div id="baggrund_fixed" class="kontakt"></div>
 
     <script src="includes.js"></script>
     <script src="kort.js"></script>
