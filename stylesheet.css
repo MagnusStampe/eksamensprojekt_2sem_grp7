@@ -4,6 +4,7 @@
 ##############################
 */
 
+
 /*#####  OVERORDNET   #####*/
 
 * {
@@ -16,6 +17,7 @@ body {
     padding: 0;
 }
 
+
 /*########  TEKST  ########*/
 
 h1 {}
@@ -24,7 +26,9 @@ h2 {}
 
 h3 {}
 
+
 /*########  ANDET  ########*/
+
 
 /*
 ##############################
@@ -32,15 +36,15 @@ h3 {}
 ##############################
 */
 
+
 /*#######  HEADER   #######*/
 
-header img {
+header.include img {
     width: 20vw;
     left: 40vw;
     z-index: 110;
     position: absolute;
     top: 1vw;
-
 }
 
 #header_bar {
@@ -52,12 +56,15 @@ header img {
     z-index: 100;
 }
 
+
 /*###  NAVIGATION MENU  ###*/
 
-#main_nav {
+nav.include {
     z-index: 150;
     position: fixed;
     top: 0;
+    left: -300px;
+    transition: 0.5s;
 }
 
 #nav_content {
@@ -98,11 +105,53 @@ header img {
     margin: 2.2vw 1vw;
 }
 
+nav.include.open {
+    left: 0px;
+}
+
+
 /*#######  FORSIDE  #######*/
+
+#forside_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/untitled-0098-2jpg.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+#forside_container p {
+    margin-top: 18vh;
+    color: #ddd;
+    font-size: 1.7em;
+    align-self: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#forside_container img {
+    align-self: center;
+    margin-top: 2vh;
+    width: 30vh;
+}
+
+#forside_container h1 {
+    margin-top: 7vh;
+    align-self: center;
+    color: #ddd;
+    font-size: 2.3em;
+}
+
 
 /*######  PRODUKTER  ######*/
 
+
 /*######  LOOKBOOK   ######*/
+
 
 /*########  OM OS   #######*/
 
@@ -112,7 +161,9 @@ header img {
     background: burlywood;
 }
 
+
 /*###  RÅDG. OG KONT.   ###*/
+
 
 /*
 ##############################
@@ -120,8 +171,11 @@ header img {
 ##############################
 */
 
+
 /*#######  TABLET   #######*/
 
+
 /*#######  DESKTOP  #######*/
+
 
 /*#######  FOOTER   #######*/
