@@ -129,6 +129,12 @@ nav.include {
     border: none;
     font-size: 1.8em;
     width: 100%;
+    transition: 0.5s;
+}
+
+#nav_content button:hover {
+    color: #ccc;
+    transform: translateX(10px);
 }
 
 #burger {
@@ -141,6 +147,10 @@ nav.include {
     z-index: 150;
     cursor: pointer;
     transition: 0.5s;
+}
+
+#burger:hover div {
+    background-color: #ccc;
 }
 
 #burger div {
@@ -280,6 +290,10 @@ footer a {
     padding: 0.4em;
 }
 
+#kontakt_box p {
+    color: #eee;
+}
+
 #kontakt_box button,
 #kontakt_box .submit {
     width: 100%;
@@ -290,6 +304,13 @@ footer a {
     background-color: #222;
     border: none;
     font-weight: 700;
+
+    cursor: pointer;
+}
+
+#kontakt_box button:hover,
+#kontakt_box .submit:hover {
+    background-color: #111;
 }
 
 #kontakt_box input {
