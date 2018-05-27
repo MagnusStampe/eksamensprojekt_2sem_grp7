@@ -83,7 +83,7 @@ h3 {}
 
 header.include img {
     width: 30vw;
-    left: 30vw;
+    left: 35vw;
     z-index: 110;
     position: absolute;
     top: 0.1vw;
@@ -91,11 +91,11 @@ header.include img {
 
 #header_bar {
     width: 100%;
-    height: 12vw;
-    background-color: #333;
+    height: 20vw;
     background-image: url(img/wood-1759566_1920.jpg);
+
     position: absolute;
-    top: 5vw;
+    top: 0vw;
     left: 0;
     z-index: 100;
 }
@@ -235,13 +235,14 @@ footer a {
 
 #baggrund_fixed.om {
     background-color: #555;
-    background-image: url(img/wood-1759566_1920.jpg);
+
 }
 
 #om #kasper {
     display: block;
     width: 70vw;
     margin: 0 auto;
+
 }
 
 #om #om_kasper {
@@ -306,8 +307,9 @@ footer a {
 #kontakt_box .submit {
     width: 100%;
     height: 3em;
+    font-size: 0.8em;
     margin: 10px 0;
-
+    font-family: 'Crimson Text', serif;
     color: #FFF;
     background-color: #222;
     border: none;
