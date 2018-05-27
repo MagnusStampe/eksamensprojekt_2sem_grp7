@@ -38,6 +38,7 @@ h1 {
     color: #fff;
     margin-top: 25vw;
     margin-left: 20px;
+
 }
 
 h2 {
@@ -81,11 +82,11 @@ h3 {}
 /*#######  HEADER   #######*/
 
 header.include img {
-    width: 20vw;
-    left: 40vw;
+    width: 30vw;
+    left: 30vw;
     z-index: 110;
     position: absolute;
-    top: 1vw;
+    top: 0.1vw;
 }
 
 #header_bar {
@@ -171,9 +172,10 @@ nav.include.open #burger div:last-child {
 /*#######  FOOTER   #######*/
 
 footer {
-    background-color: #333;
+    background-color: #767a7d;
     padding: 20px;
     color: #ddd;
+
 }
 
 footer a {
@@ -191,6 +193,8 @@ footer a {
     flex-direction: column;
     margin: 0;
     padding: 0;
+
+
 }
 
 #forside_container p {
@@ -200,7 +204,12 @@ footer a {
     align-self: center;
     text-align: center;
     padding: 0 20px;
+
+
+
 }
+
+
 
 #forside_container img {
     align-self: center;
@@ -212,7 +221,8 @@ footer a {
     margin-top: 7vh;
     align-self: center;
     color: #111;
-    font-size: 2.3em;
+    font-size: 2em;
+    font-family: 'Cinzel', serif;
 }
 
 
@@ -244,6 +254,11 @@ footer a {
     margin: 0;
     padding: 10px;
     font-weight: 600;
+
+}
+
+#om h1 {
+    font-family: 'Cinzel', serif;
 }
 
 /*###  RÅDG. OG KONT.   ###*/
@@ -306,6 +321,11 @@ footer a {
     min-height: 150px;
     width: 100%;
     padding: 0.5em;
+}
+
+#kontakt h1 {
+    font-family: 'Cinzel', serif;
+
 }
 
 /*
