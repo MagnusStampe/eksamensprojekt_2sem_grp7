@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,26 @@
 
 <body>
 
-    <div id="top_includes"> </div>
+    <header class="include"></header>
+    <nav class="include"></nav>
 
-    <section data-dest></section>
+    <main id="lookbook">
 
-    <template data-temp>
-       <img src="" alt="" data-img>
-   </template>
+        <button id="privat" class="sort_btn selected" data-privat>Privat</button>
+        <button id="erhverv" class="sort_btn" data-erhverv>Erhverv</button>
+
+        <section data-dest></section>
+
+        <template data-temp>
+            <img src="" alt="" data-img>
+        </template>
+
+    </main>
+
     <footer></footer>
 
     <script src="lookbook.js"></script>
     <script src="includes.js"></script>
 </body>
+
 </html>

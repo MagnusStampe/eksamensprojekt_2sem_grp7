@@ -26,6 +26,7 @@ h4,
 p,
 address {
     cursor: default;
+    color: #fafafa;
 }
 
 a,
@@ -60,6 +61,7 @@ h3 {}
     z-index: -2;
     background-size: cover;
     background-position: center;
+    background-color: #555;
 }
 
 #baggrund_overlay {
@@ -229,6 +231,33 @@ footer a {
 
 /*######  LOOKBOOK   ######*/
 
+#lookbook .sort_btn {
+    position: fixed;
+    left: 0;
+    height: 8vw;
+    width: 22vw;
+    border: none;
+    background-color: #333;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+#lookbook .sort_btn.selected {
+    width: 25vw;
+    background-color: #222;
+}
+
+#lookbook #privat {
+    top: 20vw;
+}
+
+#lookbook #erhverv {
+    top: 31vw;
+}
+
 /*########  OM OS   #######*/
 
 #baggrund_fixed.om {
@@ -323,6 +352,52 @@ footer a {
     min-height: 150px;
     width: 100%;
     padding: 0.5em;
+}
+
+/*########  KURV   ########*/
+
+#kurv button {
+    background-color: #444;
+    border: none;
+    padding: 0.5em;
+    color: #ddd;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+#kurv button:hover {
+    background-color: #333;
+}
+
+#kurv_box {
+    background-color: #777;
+    padding: 20px;
+}
+
+#kurv_box span {
+    color: #f44;
+}
+
+#top_bar_vare,
+.vare {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 60px 1fr;
+}
+
+#top_bar_vare {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.vare {
+    background-color: #888;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.vare input {
+    width: 40px;
+    text-align: right;
 }
 
 /*
