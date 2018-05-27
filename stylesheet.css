@@ -39,6 +39,7 @@ h1 {
     color: #fff;
     margin-top: 25vw;
     margin-left: 20px;
+
 }
 
 h2 {
@@ -83,19 +84,20 @@ h3 {}
 /*#######  HEADER   #######*/
 
 header.include img {
-    width: 20vw;
-    left: 40vw;
+    width: 30vw;
+    left: 35vw;
     z-index: 110;
     position: absolute;
-    top: 1vw;
+    top: 0.1vw;
 }
 
 #header_bar {
     width: 100%;
-    height: 12vw;
-    background-color: #333;
+    height: 20vw;
+    background-image: url(img/wood-1759566_1920.jpg);
+
     position: absolute;
-    top: 5vw;
+    top: 0vw;
     left: 0;
     z-index: 100;
 }
@@ -182,9 +184,11 @@ nav.include.open #burger div:last-child {
 /*#######  FOOTER   #######*/
 
 footer {
-    background-color: #333;
+    background-color: #767a7d;
     padding: 20px;
     color: #ddd;
+    font-family: 'Crimson Text', serif;
+
 }
 
 footer a {
@@ -202,6 +206,8 @@ footer a {
     flex-direction: column;
     margin: 0;
     padding: 0;
+
+
 }
 
 #forside_container p {
@@ -211,7 +217,12 @@ footer a {
     align-self: center;
     text-align: center;
     padding: 0 20px;
+
+
+
 }
+
+
 
 #forside_container img {
     align-self: center;
@@ -223,7 +234,8 @@ footer a {
     margin-top: 7vh;
     align-self: center;
     color: #111;
-    font-size: 2.3em;
+    font-size: 2em;
+    font-family: 'Cinzel', serif;
 }
 
 
@@ -262,24 +274,34 @@ footer a {
 
 #baggrund_fixed.om {
     background-color: #555;
+
 }
 
 #om #kasper {
     display: block;
     width: 70vw;
     margin: 0 auto;
+
 }
 
 #om #om_kasper {
     padding: 20px 20px;
     background-color: rgba(50, 50, 50, 0.7);
     color: #ddd;
+    background-image: url(img/wood-1759566_1920.jpg);
 }
 
 #om #om_kasper p {
     margin: 0;
     padding: 10px;
     font-weight: 600;
+    font-family: 'Crimson Text', serif;
+
+
+}
+
+#om h1 {
+    font-family: 'Cinzel', serif;
 }
 
 /*###  RÅDG. OG KONT.   ###*/
@@ -309,6 +331,7 @@ footer a {
 
 #kontakt_box {
     background-color: #444;
+    background-image: url(img/wood-1759566_1920.jpg);
     padding: 20px;
     transition: 0.5s;
 }
@@ -327,8 +350,9 @@ footer a {
 #kontakt_box .submit {
     width: 100%;
     height: 3em;
+    font-size: 0.8em;
     margin: 10px 0;
-
+    font-family: 'Crimson Text', serif;
     color: #FFF;
     background-color: #222;
     border: none;
@@ -352,6 +376,10 @@ footer a {
     min-height: 150px;
     width: 100%;
     padding: 0.5em;
+}
+
+#kontakt h1 {
+    font-family: 'Cinzel', serif;
 }
 
 /*########  KURV   ########*/
@@ -379,7 +407,7 @@ footer a {
 }
 
 #top_bar_vare,
-.vare {
+#kurv .vare {
     display: grid;
     grid-template-columns: 2.5fr 1fr 60px 1fr;
 }
@@ -389,15 +417,42 @@ footer a {
     font-size: 1.1em;
 }
 
-.vare {
+#kurv .vare {
     background-color: #888;
     padding: 10px;
     margin: 10px 0;
 }
 
-.vare input {
+#kurv .vare input {
     width: 40px;
     text-align: right;
+}
+
+#subtotal_grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#kurv .pris {
+    text-align: right;
+}
+
+#kurv .tilbage {
+    font-size: 0.9em;
+}
+
+#kurv .x {
+    background-color: #f44;
+    border-radius: 100px;
+    color: #fff;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#kurv .x:hover {
+    background-color: #b33;
 }
 
 /*
