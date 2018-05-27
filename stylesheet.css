@@ -175,6 +175,7 @@ footer {
     background-color: #767a7d;
     padding: 20px;
     color: #ddd;
+    font-family: 'Crimson Text', serif;
 
 }
 
@@ -254,6 +255,8 @@ footer a {
     margin: 0;
     padding: 10px;
     font-weight: 600;
+    font-family: 'Crimson Text', serif;
+
 
 }
 
