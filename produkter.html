@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,32 @@
 </head>
 
 <body>
-    <div id="top_includes"> </div>
+    <header class="include"></header>
+    <nav class="include"></nav>
 
-    <!--   lokationen for produkt-data -->
+    <main>
 
-    <section [produkter-dest]></section>
+        <!--   lokationen for produkt-data -->
 
-    <!--    bruges til at kopiere ind i dest -->
+        <section data-dest></section>
 
-    <template data-template>
-<!--
-        <div data-beskrivelse class="beskrivelse"></div>
-        <div data-pris class="pris"></div>
-        <div data-materialer class="materialer"></div>
--->
+        <!--    bruges til at kopiere ind i dest -->
+
+        <template data-template>
+            <!--
+            <div data-beskrivelse class="beskrivelse"></div>
+            <div data-pris class="pris"></div>
+            <div data-materialer class="materialer"></div>
+            -->
         <div><img data-billede src="" alt=""></div>
     </template>
 
-    <footer></footer>
+    </main>
+
+    <footer class="include"></footer>
 
     <script src="produkter.js"></script>
     <script src="includes.js"></script>
 </body>
+
 </html>

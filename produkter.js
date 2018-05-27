@@ -12,7 +12,7 @@ async function hentJson() {
 
 function visProdukter() {
 
-    let dest = document.querySelector("[produkter-dest]");
+    let dest = document.querySelector("[data-dest]");
     let temp = document.querySelector("[data-template]");
 
 
