@@ -215,8 +215,12 @@ footer strong {
 
 /*#######  FORSIDE  #######*/
 
-#baggrund_fixed.forside {
+#baggrund_fixed.forside,
+    {
     background-size: cover;
+    top: 10vw;
+    z-index: -1;
+
 }
 
 
@@ -225,18 +229,22 @@ footer strong {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    z-index: -1;
 
 
 
 }
 
-#forside_container p {
-    margin-top: 18vh;
-    color: #222;
-    font-size: 1.7em;
+#forside_container p,
+em {
+    margin-top: 10vh;
+    color: #111;
+    font-size: 1.3em;
     align-self: center;
     text-align: center;
     padding: 0 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
 
 
 
@@ -246,8 +254,8 @@ footer strong {
 
 #forside_container img {
     align-self: center;
-    margin-top: 2vh;
-    width: 30vh;
+    margin-top: 25vh;
+    width: 40vh;
 }
 
 #forside_container h1 {
