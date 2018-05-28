@@ -187,12 +187,28 @@ footer {
     background-color: #767a7d;
     padding: 20px;
     color: #ddd;
-    font-family: 'Crimson Text', serif;
+
+
 
 }
 
 footer a {
     text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+    color: #90bdbb;
+
+}
+
+a:hover {
+    color: #ddd;
+}
+
+footer p {
+    font-family: 'Roboto Slab', serif;
+}
+
+footer strong {
+    font-family: 'Roboto Slab', serif;
 }
 
 /*#######  FORSIDE  #######*/
@@ -241,6 +257,18 @@ footer a {
 
 /*######  PRODUKTER  ######*/
 
+h1 {
+    color: black;
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+
+
+}
+
+img {
+    width: 100vw;
+}
+
 /*######  LOOKBOOK   ######*/
 
 #lookbook .sort_btn {
@@ -273,13 +301,12 @@ footer a {
 /*########  OM OS   #######*/
 
 #baggrund_fixed.om {
-    background-color: #555;
-
+    background-image: url(img/planketekstur.JPG);
 }
 
 #om #kasper {
     display: block;
-    width: 70vw;
+    width: 100vw;
     margin: 0 auto;
 
 }
@@ -288,20 +315,24 @@ footer a {
     padding: 20px 20px;
     background-color: rgba(50, 50, 50, 0.7);
     color: #ddd;
-    background-image: url(img/wood-1759566_1920.jpg);
+    background-image: url(img/planketekstur.JPG);
+    background-size: cover;
+
 }
 
 #om #om_kasper p {
     margin: 0;
     padding: 10px;
     font-weight: 600;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
 
 
 }
 
 #om h1 {
     font-family: 'Cinzel', serif;
+    color: #ffffff;
 }
 
 /*###  RÅDG. OG KONT.   ###*/
