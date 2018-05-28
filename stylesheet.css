@@ -85,7 +85,7 @@ h3 {}
 /*#######  HEADER   #######*/
 
 header.include img {
-    width: 30vw;
+    width: 35vw;
     left: 35vw;
     z-index: 110;
     position: absolute;
@@ -94,7 +94,7 @@ header.include img {
 
 #header_bar {
     width: 100%;
-    height: 20vw;
+    height: 25vw;
     background-image: url(img/wood-1759566_1920.jpg);
 
     position: absolute;
@@ -347,7 +347,24 @@ img {
 #om h1 {
     font-family: 'Cinzel', serif;
     color: #ffff;
+    margin-top: 35vw;
+    font-size: 1.7em;
 }
+
+#om button {
+
+
+    height: 8vw;
+    width: 22vw;
+    border: none;
+    background-color: #000000;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
 
 /*###  RÅDG. OG KONT.   ###*/
 
@@ -440,7 +457,7 @@ textarea {
 #kontakt h1 {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
-    margin-top: 30vw;
+    margin-top: 35vw;
     color: #fff;
 
 }
@@ -451,6 +468,13 @@ textarea {
 }
 
 /*########  KURV   ########*/
+
+#kurv {
+    background-image: url(img/mursteen.JPG);
+    background-size: cover;
+    filter: grayscale();
+
+}
 
 #kurv button {
     background-color: #444;
@@ -467,10 +491,12 @@ textarea {
 }
 
 #kurv_box {
-    background-color: #777;
+
     padding: 20px;
 
 }
+
+
 
 
 
@@ -498,6 +524,9 @@ textarea {
 
 #kurv h1 {
     color: #fff;
+    font-size: 1.7em;
+
+
 }
 
 #kurv h2,
