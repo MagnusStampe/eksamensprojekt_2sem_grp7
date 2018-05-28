@@ -338,7 +338,7 @@ img {
 /*###  RÅDG. OG KONT.   ###*/
 
 #baggrund_fixed.kontakt {
-    background-image: url(img/untitled-0098-2jpg.jpeg);
+    background-image: url(img/IMG_1464.JPG);
 }
 
 #kontakt {
@@ -349,7 +349,14 @@ img {
     padding: 20px;
     background-color: rgba(50, 50, 50, 0.6);
     color: #ddd;
-    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#info_box address,
+p {
+    font-family: 'Roboto Slab', serif;
+
 }
 
 #kontakt #map {
@@ -365,6 +372,7 @@ img {
     background-image: url(img/wood-1759566_1920.jpg);
     padding: 20px;
     transition: 0.5s;
+
 }
 
 #kontakt_box .tilbage {
@@ -375,6 +383,7 @@ img {
 
 #kontakt_box p {
     color: #eee;
+    font-family: 'Roboto Slab', serif;
 }
 
 #kontakt_box button,
@@ -383,12 +392,11 @@ img {
     height: 3em;
     font-size: 0.8em;
     margin: 10px 0;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Slab', serif;
     color: #FFF;
     background-color: #222;
     border: none;
     font-weight: 700;
-
     cursor: pointer;
 }
 
@@ -411,6 +419,10 @@ img {
 
 #kontakt h1 {
     font-family: 'Cinzel', serif;
+}
+
+#kontakt h2 {
+    font-family: 'Roboto Slab', serif;
 }
 
 /*########  KURV   ########*/
