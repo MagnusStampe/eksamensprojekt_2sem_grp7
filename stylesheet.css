@@ -321,6 +321,8 @@ img {
     width: 100vw;
     margin: 0 auto;
 
+    z-index: -2;
+
 }
 
 #om #om_kasper {
@@ -344,7 +346,7 @@ img {
 
 #om h1 {
     font-family: 'Cinzel', serif;
-    color: #ffffff;
+    color: #ffff;
 }
 
 /*###  RÅDG. OG KONT.   ###*/
@@ -379,11 +381,14 @@ p {
 
 /* Kontakt box */
 
-#kontakt_box {
-    background-color: #444;
-    background-image: url(img/wood-1759566_1920.jpg);
+#kontakt_box input,
+textarea {
+
+
     padding: 20px;
     transition: 0.5s;
+    font-family: 'Roboto Slab', serif;
+
 
 }
 
@@ -402,7 +407,7 @@ p {
 #kontakt_box .submit {
     width: 100%;
     height: 3em;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 10px 0;
     font-family: 'Roboto Slab', serif;
     color: #FFF;
@@ -410,6 +415,8 @@ p {
     border: none;
     font-weight: 700;
     cursor: pointer;
+    background-image: url(img/wood-1759566_1920.jpg);
+
 }
 
 #kontakt_box button:hover,
@@ -434,6 +441,8 @@ p {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
     margin-top: 30vw;
+    color: #fff;
+
 }
 
 #kontakt h2 {
@@ -460,7 +469,10 @@ p {
 #kurv_box {
     background-color: #777;
     padding: 20px;
+
 }
+
+
 
 #kurv_box span {
     color: #f44;
@@ -477,10 +489,22 @@ p {
     font-size: 1.1em;
 }
 
-#kurv .vare {
+#kurv .vare strong {
     background-color: #888;
     padding: 10px;
     margin: 10px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+#kurv h1 {
+    color: #fff;
+}
+
+#kurv h2,
+h3,
+input {
+    font-family: 'Roboto Slab', serif;
+
 }
 
 #kurv .vare input {
