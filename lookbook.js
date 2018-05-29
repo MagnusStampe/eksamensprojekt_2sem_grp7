@@ -52,7 +52,7 @@ function indsaetHTML(filtrer) {
             if (destNum < destColumn) {
                 dest = document.querySelector("[data-dest" + destNum + "]");
             } else {
-                dest = document.querySelector("[data-dest"++"]");
+                dest = document.querySelector("[data-dest" + destNum + "]");
                 destNum = 0;
             }
 
