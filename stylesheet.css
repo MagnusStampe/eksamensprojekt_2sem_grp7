@@ -521,6 +521,7 @@ textarea {
     filter: grayscale();
 
 
+
 }
 
 #kurv button {
@@ -531,6 +532,7 @@ textarea {
     font-weight: 700;
     font-size: 1.1em;
     font-family: 'Roboto Slab', serif;
+
 }
 
 #kurv button:hover {
@@ -541,10 +543,8 @@ textarea {
 
     padding: 20px;
 
+
 }
-
-
-
 
 
 #kurv_box span {
