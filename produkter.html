@@ -20,6 +20,8 @@
 
             <button class="next but"></button>
             <button class="prev but"></button>
+            <h2 class="slide_headline">Plankeborde</h2>
+            <div class="bar"></div>
 
             <div class="slide"></div>
 
@@ -28,17 +30,18 @@
 
         <!--   lokationen for produkt-data -->
 
-        <section data-dest></section>
+        <section data-dest id="dest"></section>
 
         <!--    bruges til at kopiere ind i dest -->
 
         <template data-template>
+            <article>
+                <div data-beskrivelse class="beskrivelse"></div>
+                <div data-pris class="pris"></div>
+                <div data-materialer class="materialer"></div>
 
-            <div data-beskrivelse class="beskrivelse"></div>
-            <div data-pris class="pris"></div>
-            <div data-materialer class="materialer"></div>
-
-            <div><img data-billede src="" alt=""></div>
+                <div><img data-billede src="" alt=""></div>
+            </article>
         </template>
 
     </main>

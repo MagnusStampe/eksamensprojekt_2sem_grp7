@@ -2,6 +2,7 @@ let billede = [];
 document.addEventListener("DOMContentLoaded", loaded);
 
 let slideNum = 1;
+let slideKat = "Plankeborde";
 
 function loaded() {
     hentJson();
@@ -11,51 +12,114 @@ function loaded() {
 async function hentJson() {
     let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkter");
     //let jsonData = await fetch("test.json");
-    billede = await jsonData.json();
+    produkter = await jsonData.json();
 
-    visProdukter();
+    visProdukter(slideKat);
 
 }
 
-function visProdukter() {
+function visProdukter(kategori) {
+
+    document.querySelector("#produkter .slide_headline").textContent = slideKat;
 
     let dest = document.querySelector("[data-dest]");
     let temp = document.querySelector("[data-template]");
 
+    dest.innerHTML = "";
 
+    produkter.forEach(produkt => {
 
-    billede.forEach(bil => {
-        let klon = temp.cloneNode(true).content;
+        if (kategori == produkt.acf.kategori) {
+            let klon = temp.cloneNode(true).content;
 
-        klon.querySelector("[data-billede]").src = bil.acf.billede.url;
-        klon.querySelector("[data-billede]").alt = bil.acf.billede.url;
-        dest.appendChild(klon);
-    });
-}
-
-function slide(){
-console.log("slide()")
-    document.querySelector(".next").addEventListener("click", ()=> {
-        console.log("next");
-        if(slideNum < 3){
-            console.log("under 3")
-            slideNum++;
-            document.querySelector(".slide").setAttribute.backgroundImage = "img/produktKat" + slideNum + ".jpg";
-        } else {
-            console.log("equal 3")
-            slideNum = 1;
-            document.querySelector(".slide").setAttribute.backgroundImage = "img/produktKat" + slideNum + ".jpg";
+            klon.querySelector("[data-billede]").src = produkt.acf.billede.url;
+            klon.querySelector("[data-billede]").alt = produkt.acf.billede.navn;
+            dest.appendChild(klon);
         }
     });
 }
 
-function setKat(kat) {
+function slide() {
+    console.log("slide()")
 
-    if(kat == "plankeborde") {
-        slide()
-    } else if(kat == "lamper") {
 
-    }
+    document.querySelector(".next").addEventListener("click", () => {
 
+        //Skift til stole
+        if (slideNum == 1) {
+            console.log("1 til 2")
+
+            slideNum++;
+            slideKat = "Stole";
+
+            document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
+            console.log('url("img/produktKat' + slideNum + '.jpg")');
+
+            visProdukter(slideKat);
+
+            //Skift til lamper
+        } else if (slideNum == 2) {
+            console.log("2 til 3")
+
+            slideNum++;
+            slideKat = "Lamper";
+
+            document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
+            console.log('url("img/produktKat' + slideNum + '.jpg")');
+
+            visProdukter(slideKat);
+
+            //Skift til plankeborde
+        } else {
+            console.log("3 til 1")
+
+            slideNum = 1;
+            slideKat = "Plankeborde";
+
+            document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
+            console.log('url("img/produktKat' + slideNum + '.jpg")');
+
+            visProdukter(slideKat);
+        }
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+
+        //Skift til stole
+        if (slideNum == 1) {
+            console.log("1 til 3")
+
+            slideNum = 3;
+            slideKat = "Lamper";
+
+            document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
+            console.log('url("img/produktKat' + slideNum + '.jpg")');
+
+            visProdukter(slideKat);
+
+            //Skift til lamper
+        } else if (slideNum == 2) {
+            console.log("2 til 1")
+
+            slideNum--;
+            slideKat = "Plankeborde";
+
+            document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
+            console.log('url("img/produktKat' + slideNum + '.jpg")');
+
+            visProdukter(slideKat);
+
+            //Skift til plankeborde
+        } else {
+            console.log("3 til 1")
+
+            slideNum--;
+            slideKat = "Stole";
+
+            document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
+            console.log('url("img/produktKat' + slideNum + '.jpg")');
+
+            visProdukter(slideKat);
+        }
+    });
 }
-

@@ -55,7 +55,7 @@ h3 {}
 /*########  ANDET  ########*/
 
 img {
-    width: 100vw;
+    width: 100%;
 }
 
 #baggrund_fixed {
@@ -193,9 +193,6 @@ footer {
     background-color: #767a7d;
     padding: 20px;
     color: #ddd;
-
-
-
 }
 
 footer a {
@@ -234,9 +231,6 @@ footer strong {
     margin: 0;
     padding: 0;
     z-index: -1;
-
-
-
 }
 
 #forside_container p,
@@ -249,12 +243,7 @@ em {
     padding: 0 20px;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-
-
-
 }
-
-
 
 #forside_container img {
     align-self: center;
@@ -283,7 +272,7 @@ em {
     width: 12vw;
     top: 26.5vw;
 
-    background-color: rgba(30,30,30,0.3);
+    background-color: rgba(30, 30, 30, 0.3);
     border: none;
 }
 
@@ -296,12 +285,46 @@ em {
 }
 
 #produkter .slide {
-    width: 100vw;
+    width: 100%;
     height: 60vw;
     background-image: url(img/produktKat1.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
+}
+
+#produkter .slide_headline {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+    z-index: 2;
+}
+
+#produkter .bar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    bottom: 20px;
+    z-index: 1;
+}
+
+#produkter #dest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#produkter #dest article {
+    overflow: hidden;
+}
+
+#produkter #dest img {
+    transform: scale(1.1)
 }
 
 /*######  LOOKBOOK   ######*/
