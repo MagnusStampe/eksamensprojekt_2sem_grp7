@@ -1,9 +1,7 @@
 let billede = [];
 document.addEventListener("DOMContentLoaded", loaded);
 
-let next = "stole";
-let prev = "lamper";
-let now = "plankeborde";
+let slideNum = 1;
 
 function loaded() {
     hentJson();
@@ -32,18 +30,22 @@ function visProdukter() {
         klon.querySelector("[data-billede]").src = bil.acf.billede.url;
         klon.querySelector("[data-billede]").alt = bil.acf.billede.url;
         dest.appendChild(klon);
-
-
     });
-
 }
 
-function slide() {
-    console.log("Slide prev:  " + prev + " next: " + next + " now: " + now)
-
+function slide(){
+console.log("slide()")
     document.querySelector(".next").addEventListener("click", ()=> {
-        console.log(next);
-        document.querySelector(".slide").setAttribute.backgroundImage = next + ".jpg";
+        console.log("next");
+        if(slideNum < 3){
+            console.log("under 3")
+            slideNum++;
+            document.querySelector(".slide").setAttribute.backgroundImage = "img/produktKat" + slideNum + ".jpg";
+        } else {
+            console.log("equal 3")
+            slideNum = 1;
+            document.querySelector(".slide").setAttribute.backgroundImage = "img/produktKat" + slideNum + ".jpg";
+        }
     });
 }
 
