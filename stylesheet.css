@@ -231,6 +231,7 @@ footer strong {
     margin: 0;
     padding: 0;
     z-index: -1;
+    background-color: rgba(255, 255, 255, 0.21);
 }
 
 #forside_container p,
@@ -243,6 +244,7 @@ em {
     padding: 0 20px;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
+
 }
 
 #forside_container img {
@@ -257,6 +259,12 @@ em {
     color: #111;
     font-size: 2em;
     font-family: 'Cinzel', serif;
+}
+
+#baggrund_fixed.forside iframe {
+    width: 100vw;
+    height: 160vw;
+    filter: blur(3px);
 }
 
 

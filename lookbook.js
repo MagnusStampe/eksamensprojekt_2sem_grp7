@@ -61,6 +61,7 @@ function indsaetHTML(filtrer) {
             let klon = temp.cloneNode(true).content;
 
             klon.querySelector("[data-img]").src = billede.acf.startbillede.url;
+
             klon.querySelector("[data-img]").alt = billede.acf.navn;
             dest.appendChild(klon);
         }
