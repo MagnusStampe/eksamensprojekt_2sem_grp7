@@ -37,7 +37,7 @@ button {
 
 h1 {
     font-size: 2em;
-    color: #000;
+    color: #ffffff;
     margin-top: 25vw;
     margin-left: 20px;
     font-family: 'Cinzel', serif;
@@ -262,6 +262,8 @@ em {
 
 /*######  PRODUKTER  ######*/
 
+#produkter {}
+
 #produkter #slideshow {
     position: relative;
 }
@@ -291,6 +293,7 @@ em {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+
 }
 
 #produkter .slide_headline {
@@ -301,7 +304,16 @@ em {
     margin: 0;
     color: #fff;
     z-index: 2;
+    font-family: 'Cinzel', serif;
 }
+
+#produkter h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.7em;
+    margin-top: 35vw;
+    color: #fff;
+}
+
 
 #produkter .bar {
     position: absolute;
@@ -317,6 +329,7 @@ em {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
+    background-color: #767a7d;
 }
 
 #produkter #dest article {
