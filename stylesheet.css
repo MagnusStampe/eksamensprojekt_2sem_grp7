@@ -50,7 +50,14 @@ h2 {
     margin: 20px 0px 10px 0px;
 }
 
-h3 {}
+
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    margin-top: 35vw;
+    color: #fff;
+}
 
 /*########  ANDET  ########*/
 
@@ -270,7 +277,20 @@ em {
 
 /*######  PRODUKTER  ######*/
 
-#produkter {}
+#baggrund_fixed {
+    background-color: #4b736d;
+}
+
+#produkter {
+    background-color: #4b736d;
+}
+
+#produkter h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.7em;
+    margin-top: 35vw;
+    color: #fff;
+}
 
 #produkter #slideshow {
     position: relative;
@@ -321,12 +341,7 @@ em {
     font-family: 'Cinzel', serif;
 }
 
-#produkter h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.7em;
-    margin-top: 35vw;
-    color: #fff;
-}
+
 
 
 #produkter .bar {
@@ -340,10 +355,10 @@ em {
 
 #produkter #dest {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     padding: 10px;
-    background-color: #767a7d;
+    background-color: #4b736d;
 }
 
 #produkter #dest article {
@@ -355,6 +370,18 @@ em {
 }
 
 /*######  LOOKBOOK   ######*/
+
+#lookbook {
+    background-color: #4b736d;
+}
+
+#lookbook h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.7em;
+    margin-top: 35vw;
+    color: #fff;
+    background-color: #4b736d;
+}
 
 #lookbook .sort_btn {
     position: fixed;
