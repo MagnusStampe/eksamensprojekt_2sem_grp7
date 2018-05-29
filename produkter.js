@@ -28,12 +28,12 @@ function visProdukter(kategori) {
     dest.innerHTML = "";
 
     produkter.forEach(produkt => {
-
         if (kategori == produkt.acf.kategori) {
+            console.log(kategori)
             let klon = temp.cloneNode(true).content;
 
             klon.querySelector("[data-billede]").src = produkt.acf.billede.url;
-            klon.querySelector("[data-billede]").alt = produkt.acf.billede.navn;
+            klon.querySelector("[data-billede]").alt = produkt.acf.navn;
             dest.appendChild(klon);
         }
     });
