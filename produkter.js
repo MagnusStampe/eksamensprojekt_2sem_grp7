@@ -1,5 +1,14 @@
 let billede = [];
-document.addEventListener("DOMContentLoaded", hentJson);
+document.addEventListener("DOMContentLoaded", loaded);
+
+let next = "stole";
+let prev = "lamper";
+let now = "plankeborde";
+
+function loaded() {
+    hentJson();
+    slide();
+}
 
 async function hentJson() {
     let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkter");
@@ -18,7 +27,6 @@ function visProdukter() {
 
 
     billede.forEach(bil => {
-        console.log(bil.acf.billede.url);
         let klon = temp.cloneNode(true).content;
 
         klon.querySelector("[data-billede]").src = bil.acf.billede.url;
@@ -29,3 +37,23 @@ function visProdukter() {
     });
 
 }
+
+function slide() {
+    console.log("Slide prev:  " + prev + " next: " + next + " now: " + now)
+
+    document.querySelector(".next").addEventListener("click", ()=> {
+        console.log(next);
+        document.querySelector(".slide").setAttribute.backgroundImage = next + ".jpg";
+    });
+}
+
+function setKat(kat) {
+
+    if(kat == "plankeborde") {
+        slide()
+    } else if(kat == "lamper") {
+
+    }
+
+}
+

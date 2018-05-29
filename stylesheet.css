@@ -241,6 +241,37 @@ footer a {
 
 /*######  PRODUKTER  ######*/
 
+#produkter #slideshow {
+    position: relative;
+}
+
+#produkter .but {
+    position: absolute;
+    height: 9vw;
+    width: 12vw;
+    top: 26.5vw;
+
+    background-color: rgba(30,30,30,0.3);
+    border: none;
+}
+
+#produkter .prev {
+    left: 0;
+}
+
+#produkter .next {
+    right: 0;
+}
+
+#produkter .slide {
+    width: 100vw;
+    height: 60vw;
+    background-image: url(img/stole.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*######  LOOKBOOK   ######*/
 
 #lookbook .sort_btn {
