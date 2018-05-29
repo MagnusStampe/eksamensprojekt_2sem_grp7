@@ -32,13 +32,15 @@ address {
 a,
 button {
     cursor: pointer;
+    font-family: 'Roboto Slab', serif;
 }
 
 h1 {
-    font-size: 1.6em;
-    color: #fff;
+    font-size: 2em;
+    color: #000;
     margin-top: 25vw;
     margin-left: 20px;
+    font-family: 'Cinzel', serif;
 
 }
 
@@ -50,8 +52,11 @@ h2 {
 
 h3 {}
 
-
 /*########  ANDET  ########*/
+
+img {
+    width: 100vw;
+}
 
 #baggrund_fixed {
     position: fixed;
@@ -84,7 +89,7 @@ h3 {}
 /*#######  HEADER   #######*/
 
 header.include img {
-    width: 30vw;
+    width: 35vw;
     left: 35vw;
     z-index: 110;
     position: absolute;
@@ -93,7 +98,7 @@ header.include img {
 
 #header_bar {
     width: 100%;
-    height: 20vw;
+    height: 25vw;
     background-image: url(img/wood-1759566_1920.jpg);
 
     position: absolute;
@@ -134,6 +139,7 @@ nav.include {
     font-size: 1.8em;
     width: 100%;
     transition: 0.5s;
+    font-family: 'Roboto Slab', serif;
 }
 
 #nav_content button:hover {
@@ -187,36 +193,62 @@ footer {
     background-color: #767a7d;
     padding: 20px;
     color: #ddd;
-    font-family: 'Crimson Text', serif;
+
+
 
 }
 
 footer a {
     text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
+    color: #90bdbb;
+
+}
+
+a:hover {
+    color: #ddd;
+}
+
+footer p {
+    font-family: 'Roboto Slab', serif;
+}
+
+footer strong {
+    font-family: 'Roboto Slab', serif;
 }
 
 /*#######  FORSIDE  #######*/
 
-#baggrund_fixed.forside {
-    background-image: url(img/untitled-0098-2jpg.jpeg);
+#baggrund_fixed.forside,
+    {
+    background-size: cover;
+    top: 10vw;
+    z-index: -1;
+
 }
+
 
 #forside_container {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    z-index: -1;
+
 
 
 }
 
-#forside_container p {
-    margin-top: 18vh;
-    color: #222;
-    font-size: 1.7em;
+#forside_container p,
+em {
+    margin-top: 10vh;
+    color: #111;
+    font-size: 1.3em;
     align-self: center;
     text-align: center;
     padding: 0 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
 
 
 
@@ -226,8 +258,8 @@ footer a {
 
 #forside_container img {
     align-self: center;
-    margin-top: 2vh;
-    width: 30vh;
+    margin-top: 25vh;
+    width: 40vh;
 }
 
 #forside_container h1 {
@@ -304,14 +336,15 @@ footer a {
 /*########  OM OS   #######*/
 
 #baggrund_fixed.om {
-    background-color: #555;
-
+    background-image: url(img/planketekstur.JPG);
 }
 
 #om #kasper {
     display: block;
-    width: 70vw;
+    width: 100vw;
     margin: 0 auto;
+
+    z-index: -2;
 
 }
 
@@ -319,26 +352,47 @@ footer a {
     padding: 20px 20px;
     background-color: rgba(50, 50, 50, 0.7);
     color: #ddd;
-    background-image: url(img/wood-1759566_1920.jpg);
+    background-image: url(img/planketekstur.JPG);
+    background-size: cover;
+
 }
 
 #om #om_kasper p {
     margin: 0;
     padding: 10px;
     font-weight: 600;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
 
 
 }
 
 #om h1 {
     font-family: 'Cinzel', serif;
+    color: #ffff;
+    margin-top: 35vw;
+    font-size: 1.7em;
 }
+
+#om button {
+
+
+    height: 8vw;
+    width: 22vw;
+    border: none;
+    background-color: #000000;
+    font-size: 4vw;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
 
 /*###  RÅDG. OG KONT.   ###*/
 
 #baggrund_fixed.kontakt {
-    background-image: url(img/untitled-0098-2jpg.jpeg);
+    background-image: url(img/IMG_1464.JPG);
 }
 
 #kontakt {
@@ -347,9 +401,16 @@ footer a {
 
 #info_box {
     padding: 20px;
-    background-color: rgba(50, 50, 50, 0.6);
-    color: #ddd;
-    font-weight: 700;
+    background-color: rgba(90, 88, 88, 0.12);
+    color: #e6e6e6;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#info_box address,
+p {
+    font-family: 'Roboto Slab', serif;
+
 }
 
 #kontakt #map {
@@ -360,11 +421,15 @@ footer a {
 
 /* Kontakt box */
 
-#kontakt_box {
-    background-color: #444;
-    background-image: url(img/wood-1759566_1920.jpg);
+#kontakt_box input,
+textarea {
+
+
     padding: 20px;
     transition: 0.5s;
+    font-family: 'Roboto Slab', serif;
+
+
 }
 
 #kontakt_box .tilbage {
@@ -375,26 +440,29 @@ footer a {
 
 #kontakt_box p {
     color: #eee;
+    font-family: 'Roboto Slab', serif;
 }
 
 #kontakt_box button,
 #kontakt_box .submit {
     width: 100%;
     height: 3em;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 10px 0;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Slab', serif;
     color: #FFF;
     background-color: #222;
     border: none;
     font-weight: 700;
-
     cursor: pointer;
+    background-image: url(img/wood-1759566_1920.jpg);
+
 }
 
 #kontakt_box button:hover,
 #kontakt_box .submit:hover {
     background-color: #111;
+    font-family: 'Roboto Slab', serif;
 }
 
 #kontakt_box input {
@@ -411,9 +479,25 @@ footer a {
 
 #kontakt h1 {
     font-family: 'Cinzel', serif;
+    font-size: 1.7em;
+    margin-top: 35vw;
+    color: #fff;
+
+}
+
+#kontakt h2 {
+    font-family: 'Roboto Slab', serif;
+    color: black;
 }
 
 /*########  KURV   ########*/
+
+#kurv {
+    background-image: url(img/mursteen.JPG);
+    background-size: cover;
+    filter: grayscale();
+
+}
 
 #kurv button {
     background-color: #444;
@@ -422,6 +506,7 @@ footer a {
     color: #ddd;
     font-weight: 700;
     font-size: 1.1em;
+    font-family: 'Roboto Slab', serif;
 }
 
 #kurv button:hover {
@@ -429,9 +514,14 @@ footer a {
 }
 
 #kurv_box {
-    background-color: #777;
+
     padding: 20px;
+
 }
+
+
+
+
 
 #kurv_box span {
     color: #f44;
@@ -448,10 +538,25 @@ footer a {
     font-size: 1.1em;
 }
 
-#kurv .vare {
+#kurv .vare strong {
     background-color: #888;
     padding: 10px;
     margin: 10px 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+#kurv h1 {
+    color: #fff;
+    font-size: 1.7em;
+
+
+}
+
+#kurv h2,
+h3,
+input {
+    font-family: 'Roboto Slab', serif;
+
 }
 
 #kurv .vare input {
