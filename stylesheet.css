@@ -283,7 +283,7 @@ em {
     width: 12vw;
     top: 26.5vw;
 
-    background-color: rgba(30,30,30,0.3);
+    background-color: rgba(30, 30, 30, 0.3);
     border: none;
 }
 
@@ -498,6 +498,7 @@ textarea {
     filter: grayscale();
 
 
+
 }
 
 #kurv button {
@@ -508,6 +509,7 @@ textarea {
     font-weight: 700;
     font-size: 1.1em;
     font-family: 'Roboto Slab', serif;
+
 }
 
 #kurv button:hover {
@@ -518,10 +520,8 @@ textarea {
 
     padding: 20px;
 
+
 }
-
-
-
 
 
 #kurv_box span {
