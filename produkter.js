@@ -40,7 +40,7 @@ function visProdukter(kategori) {
 }
 
 function slide() {
-    console.log("slide()")
+    console.log("slide()");
 
 
     document.querySelector(".next").addEventListener("click", () => {

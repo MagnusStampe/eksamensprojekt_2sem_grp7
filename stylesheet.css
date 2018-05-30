@@ -236,15 +236,6 @@ footer strong {
 
 /*#######  FORSIDE  #######*/
 
-#baggrund_fixed.forside,
-    {
-    background-size: cover;
-    top: 10vw;
-    z-index: -1;
-
-}
-
-
 #forside_container {
     display: flex;
     flex-direction: column;
@@ -255,7 +246,7 @@ footer strong {
 }
 
 #forside_container p,
-em {
+#forside_container em {
     margin-top: 10vh;
     color: #111;
     font-size: 1.3em;
@@ -285,6 +276,9 @@ em {
     width: 100vw;
     height: 160vw;
     filter: blur(3px);
+    position: absolute;
+    top: 10vw;
+    transform: scale(3);
 }
 
 
@@ -517,7 +511,7 @@ em {
 }
 
 #info_box address,
-p {
+#info_box p {
     font-family: 'Roboto Slab', serif;
 
 }
@@ -531,7 +525,7 @@ p {
 /* Kontakt box */
 
 #kontakt_box input,
-textarea {
+#kontakt_box textarea {
 
 
     padding: 20px;
@@ -707,7 +701,71 @@ input {
 ##############################
 */
 
-/*#######  TABLET   #######*/
+@media screen and (min-width: 530px) {
+    /*#######  TABLET   #######*/
+    /* Header */
+    #header_bar {
+        height: 17vw;
+    }
+
+    header.include img {
+        width: 22vw;
+    }
+
+    /* Navigation menu */
+    #burger {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #burger div {
+        width: 6vw;
+        height: 0.8vw;
+        margin: 1.4vw 1vw;
+    }
+
+    nav.include.open #burger div:first-child {
+        transform: rotate(-45deg) translateX(-1.6vw) translateY(1.4vw);
+    }
+
+    nav.include.open #burger div:last-child {
+        transform: rotate(45deg) translateX(-1.6vw) translateY(-1.4vw);
+    }
+
+    /* Produkter */
+    #produkter #dest {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Kontakt */
+    #kontakt {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #kontakt #map {
+        width: 100%;
+        height: 30vw;
+    }
+
+
+    /* Kurv */
+    #kurv_box {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #kurv h1 {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-top: 20px;
+        display: block;
+    }
+
+}
+
 
 /*#######  DESKTOP  #######*/
 
