@@ -1,5 +1,8 @@
 let billede = [];
-let destColumn = 3;
+let destColumn;
+
+let media1 = window.matchMedia("(max-width: 1000px)");
+let media2 = window.matchMedia("(max-width: 1300px)");
 
 document.addEventListener("DOMContentLoaded", hentJson);
 
@@ -35,6 +38,16 @@ function indsaetHTML(filtrer) {
 
     let destNum = 1;
 
+    if (media1.matches) {
+        destColumn = 3;
+    } else if (media2.matches) {
+        destColumn = 5;
+    } else {
+        destColumn = 7;
+    }
+
+    console.log(destColumn);
+
     let temp = document.querySelector("[data-temp]");
     let dest = document.querySelector("[data-dest" + destNum + "]");
 
@@ -66,4 +79,12 @@ function indsaetHTML(filtrer) {
             dest.appendChild(klon);
         }
     });
+}
+
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        document.body.style.backgroundColor = "yellow";
+    } else {
+        document.body.style.backgroundColor = "pink";
+    }
 }
