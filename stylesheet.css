@@ -570,6 +570,7 @@ footer strong {
     font-weight: 700;
     cursor: pointer;
     background-image: url(img/wood-1759566_1920.jpg);
+    display: block;
 
 }
 
@@ -759,6 +760,15 @@ input {
         height: 30vw;
     }
 
+    /* Lookbook */
+    #lookbook .sort_btn {
+        height: 7vw;
+        width: 19vw;
+    }
+
+    #lookbook .sort_btn.selected {
+        width: 22vw;
+    }
 
     /* Kurv */
     #kurv_box {
@@ -839,8 +849,8 @@ input {
 
     #nav_content button {
         width: auto;
-        font-size: 1.1em;
-        margin: 0 10px;
+        font-size: 0.9em;
+        margin: 0 6px;
     }
 
     #nav_content button:hover {
@@ -872,9 +882,13 @@ input {
         top: 10vw;
         transform: scale(3);
     }
+<<<<<<< HEAD
     #forside_container img {
         width: 25vw;
     }
+=======
+
+>>>>>>> origin/master
     /* Produkter */
     #produkter {
         max-width: 1200px;
@@ -910,13 +924,15 @@ input {
         padding-top: 200px;
         display: grid;
         width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         grid-template-columns: 60% 40%;
-        grid-template-rows: 80px auto auto;
+        grid-template-rows: 80px 580px auto;
     }
 
     #kontakt h1 {
         grid-area: 1 / 1 / 2 / 3;
-        margin: 0;
+        margin: 0 20px;
     }
 
     #kontakt #kontakt_box {
@@ -951,4 +967,30 @@ input {
         padding-top: 200px;
     }
 
+    /* Lookbook */
+    #lookbook .sort_btn {
+        width: 100px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+    #lookbook .sort_btn.selected {
+        width: 130px;
+    }
+
+    #lookbook #privat {
+        top: 200px;
+    }
+    #lookbook #erhverv {
+        top: 255px;
+    }
+
+    #lookbook #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #lookbook #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
