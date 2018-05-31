@@ -50,7 +50,7 @@ function slide() {
             console.log("1 til 2")
 
             slideNum++;
-            slideKat = "Stole";
+            slideKat = "stole";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
             console.log('url("img/produktKat' + slideNum + '.jpg")');
@@ -114,7 +114,7 @@ function slide() {
             console.log("3 til 1")
 
             slideNum--;
-            slideKat = "Stole";
+            slideKat = "stole";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
             console.log('url("img/produktKat' + slideNum + '.jpg")');
