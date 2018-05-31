@@ -249,13 +249,14 @@ footer strong {
     margin: 0;
     padding: 0;
     z-index: -1;
-    background-color: rgba(255, 255, 255, 0.21);
+
 }
 
 #forside_container p,
 #forside_container em {
     margin-top: 10vh;
-    color: #111;
+    color: #ffffff;
+
     font-size: 1.3em;
     align-self: center;
     text-align: center;
@@ -288,6 +289,9 @@ footer strong {
     transform: scale(3);
 }
 
+#forside_container p {
+    background-color: rgba(0, 0, 0, 0.09);
+}
 
 /*######  PRODUKTER  ######*/
 
