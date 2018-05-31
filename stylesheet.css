@@ -788,12 +788,24 @@ input {
     }
 
     header.include img {
-        left: 10px;
+        left: 50px;
         top: 10px;
-        width: 160px;
+        width: 180px;
         z-index: 200;
+
     }
 
+    /* footer */
+    footer {
+        display: grid;
+        grid: 1fr, 1fr, 1fr;
+    }
+
+    footer p,
+    address,
+    a {
+        grid-area: 1
+    }
     /* Navigation menu (Becomming the header)*/
     #burger {
         display: none;
@@ -803,7 +815,7 @@ input {
         left: 0;
         width: 100%;
         height: 100px;
-        background-image: url(img/wood-1759566_1920.jpg);
+        background-color: rgba(51, 51, 51, 0.21);
         background-size: cover;
         background-position: center;
 
@@ -852,16 +864,17 @@ input {
     }
 
     /* Forside */
-
     #baggrund_fixed.forside iframe {
-    width: 100vw;
-    height: 42vw;
-    filter: blur(3px);
-    position: absolute;
-    top: 10vw;
-    transform: scale(3);
-}
-
+        width: 100vw;
+        height: 42vw;
+        filter: blur(3px);
+        position: absolute;
+        top: 10vw;
+        transform: scale(3);
+    }
+    #forside_container img {
+        width: 25vw;
+    }
     /* Produkter */
     #produkter {
         max-width: 1200px;
@@ -892,7 +905,6 @@ input {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-
     /* Kontakt */
     #kontakt {
         padding-top: 200px;
@@ -918,10 +930,11 @@ input {
     }
 
     #kontakt .singlemap {
-        grid-area: 3 / 1 / 4 / 3;
+
+        width: 100vw;
     }
     #kontakt #map {
-        width: 600px;
+        width: 1250px;
         height: 300px;
         margin: 20px auto;
     }
