@@ -413,7 +413,7 @@ footer strong {
     color: #fff;
     transition: 0.5s;
     transition-timing-function: ease;
-    z-index: 200;
+    z-index: 130;
 }
 
 #lookbook .sort_btn:hover {
@@ -798,24 +798,12 @@ input {
     }
 
     header.include img {
-        left: 50px;
+        left: 10px;
         top: 10px;
-        width: 180px;
+        width: 160px;
         z-index: 200;
-
     }
 
-    /* footer */
-    footer {
-        display: grid;
-        grid: 1fr, 1fr, 1fr;
-    }
-
-    footer p,
-    address,
-    a {
-        grid-area: 1
-    }
     /* Navigation menu (Becomming the header)*/
     #burger {
         display: none;
@@ -825,7 +813,7 @@ input {
         left: 0;
         width: 100%;
         height: 100px;
-        background-color: rgba(51, 51, 51, 0.21);
+        background-image: url(img/wood-1759566_1920.jpg);
         background-size: cover;
         background-position: center;
 
@@ -882,13 +870,7 @@ input {
         top: 10vw;
         transform: scale(3);
     }
-<<<<<<< HEAD
-    #forside_container img {
-        width: 25vw;
-    }
-=======
 
->>>>>>> origin/master
     /* Produkter */
     #produkter {
         max-width: 1200px;
@@ -919,6 +901,7 @@ input {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+
     /* Kontakt */
     #kontakt {
         padding-top: 200px;
@@ -946,11 +929,10 @@ input {
     }
 
     #kontakt .singlemap {
-
-        width: 100vw;
+        grid-area: 3 / 1 / 4 / 3;
     }
     #kontakt #map {
-        width: 1250px;
+        width: 600px;
         height: 300px;
         margin: 20px auto;
     }
