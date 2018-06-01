@@ -197,7 +197,7 @@ nav.include.open #burger div:last-child {
 nav .logo {
     position: absolute;
     top: 600px;
-    left: 20px;
+    left: 90px;
     height: 350px;
 }
 
@@ -208,7 +208,7 @@ nav .logo a {
 nav .logo img {
     position: relative;
     margin-left: 10px;
-    width: 10%;
+    width: 3em;
 }
 
 /*#######  FOOTER   #######*/
@@ -357,10 +357,8 @@ footer strong {
     color: #fff;
     z-index: 2;
     font-family: 'Cinzel', serif;
+    text-transform: capitalize;
 }
-
-
-
 
 #produkter .bar {
     position: absolute;
@@ -726,12 +724,14 @@ footer strong {
     cursor: pointer;
     background-image: url(img/wood-1759566_1920.jpg);
     display: block;
+    transition: 0s;
 
 }
 
 #kontakt_box button:hover,
 #kontakt_box .submit:hover {
     background-color: #111;
+    filter: brightness(0.6);
     font-family: 'Roboto Slab', serif;
 }
 
@@ -763,12 +763,13 @@ footer strong {
 /*########  KURV   ########*/
 
 #kurv {
-    background-image: url(img/mursteen.JPG);
+    background-image: url(img/mursteenSortHvid.jpg);
     background-size: cover;
-    filter: grayscale();
+}
 
-
-
+#kurv h1 {
+    margin-top: 0;
+    padding-top: 180px;
 }
 
 #kurv button {
@@ -779,7 +780,6 @@ footer strong {
     font-weight: 700;
     font-size: 1.1em;
     font-family: 'Roboto Slab', serif;
-
 }
 
 #kurv button:hover {
@@ -819,8 +819,6 @@ footer strong {
 #kurv h1 {
     color: #fff;
     font-size: 1.7em;
-
-
 }
 
 #kurv h2,
@@ -853,9 +851,11 @@ input {
     border-radius: 100px;
     color: #fff;
     padding: 0;
+    margin-top: 10px;
     width: 20px;
     height: 20px;
     text-align: center;
+    font-size: 0.9em;
 }
 
 #kurv .x:hover {
@@ -966,7 +966,7 @@ input {
         margin-left: auto;
         margin-right: auto;
         padding-left: 20px;
-        padding-top: 20px;
+        padding-top: 150px;
         display: block;
     }
 
@@ -1174,7 +1174,7 @@ input {
     #kurv h1 {
         max-width: 1000px;
         margin: 0px auto 10px auto;
-        padding-top: 200px;
+        padding-left: 20px;
     }
 
     /* Lookbook */

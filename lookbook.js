@@ -55,6 +55,10 @@ function indsaetHTML(filtrer) {
     document.querySelector("[data-dest1]").innerHTML = "";
     document.querySelector("[data-dest2]").innerHTML = "";
     document.querySelector("[data-dest3]").innerHTML = "";
+    document.querySelector("[data-dest4]").innerHTML = "";
+    document.querySelector("[data-dest5]").innerHTML = "";
+    document.querySelector("[data-dest6]").innerHTML = "";
+    document.querySelector("[data-dest7]").innerHTML = "";
 
     billeder.forEach(billede => {
         console.log(billede.acf.kategori);

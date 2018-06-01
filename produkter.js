@@ -86,9 +86,13 @@ function slide() {
 
             visProdukter(slideKat);
         }
+
     });
 
     document.querySelector(".prev").addEventListener("click", () => {
+
+        document.querySelector(".prev").classList.remove("animate");
+        document.querySelector(".prev").classList.add("animate");
 
         //Skift til stole
         if (slideNum == 1) {
