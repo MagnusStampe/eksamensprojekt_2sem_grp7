@@ -17,19 +17,19 @@ async function hentJson() {
 function jsonInput() {
     console.log(billeder);
 
-    indsaetHTML("Privat");
+    indsaetHTML("privat");
 
     document.querySelector("[data-privat]").addEventListener("click", () => {
         document.querySelector("[data-privat]").classList.add("selected");
         document.querySelector("[data-erhverv]").classList.remove("selected");
 
-        indsaetHTML("Privat");
+        indsaetHTML("privat");
     });
     document.querySelector("[data-erhverv]").addEventListener("click", () => {
         document.querySelector("[data-privat]").classList.remove("selected");
         document.querySelector("[data-erhverv]").classList.add("selected");
 
-        indsaetHTML("Erhverv");
+        indsaetHTML("erhverv");
     });
 }
 

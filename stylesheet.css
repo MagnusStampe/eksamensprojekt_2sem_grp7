@@ -561,9 +561,8 @@ footer strong {
 #lookbook h1 {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
-    margin-top: 35vw;
     color: #fff;
-    background-color: #4b736d;
+
 }
 
 #lookbook .sort_btn {
@@ -885,7 +884,7 @@ input {
     /*#######  TABLET   #######*/
     /* Header */
     #header_bar {
-        height: 17vw;
+        height: 30vw;
     }
 
     header.include img {
@@ -1222,6 +1221,8 @@ input {
     #lookbook #dest {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+
+    #lookbook h1 {}
 
     /* Om os */
     #om #kasper {
