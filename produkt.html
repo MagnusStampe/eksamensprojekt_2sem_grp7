@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700" rel="stylesheet">
 </head>
 
 <body>
+
+    <header class="include"></header>
+    <nav class="include"></nav>
+
+    <main id="produkt">
+
+        <img class="billede" data-billede>
+
+        <h1 class="navn" data-navn></h1>
+
+        <div id="text_box">
+            <h2>Materialer</h2>
+            <p class="materialer" data-materialer></p>
+            <h2>Beskrivelse af produktet</h2>
+            <p class="beskrivelse" data-beskrivelse></p>
+            <p class="pris" data-pris></p>
+        </div>
+
+        <button>Læg i kurv</button>
+
+        <h2 id="samme_header">Produkter af samme kategori</h2>
+
+        <section id="dest" data-dest></section>
+
+        <template data-template>
+            <article data-container>
+                <div data-navn class="navn"></div>
+                <div data-pris class="pris"></div>
+                <div data-materialer class="materialer"></div>
+
+                <div class="overlay"></div>
+
+                <div><img data-billede src="" alt="" class="billede"></div>
+            </article>
+        </template>
+
+    </main>
+
+    <footer class="include"></footer>
+
+    <div id="baggrund_fixed"></div>
+
     <script src="includes.js"></script>
     <script src="produkt.js"></script>
 </body>
+
 </html>

@@ -381,10 +381,165 @@ footer strong {
 
 #produkter #dest article {
     overflow: hidden;
+    position: relative;
 }
 
 #produkter #dest img {
     transform: scale(1.1)
+}
+
+#produkter #dest .navn,
+#produkter #dest .materialer,
+#produkter #dest .pris,
+#produkter #dest .overlay {
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#produkter #dest .navn,
+#produkter #dest .materialer,
+#produkter #dest .pris {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    color: #eee;
+}
+
+#produkter #dest .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+}
+
+#produkter #dest .navn {
+    top: 40px;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#produkter #dest .materialer {
+    top: 5.6em;
+    font-style: italic;
+    width: 80%;
+}
+
+#produkter #dest .pris {
+    bottom: 2em;
+    font-size: 1.2em;
+}
+
+/*#######  PRODUKT  #######*/
+
+#produkt {
+    display: grid;
+}
+
+#produkt .billede {
+    display: block;
+    margin: 25vw auto 0 auto;
+}
+
+#produkt #text_box {
+    padding: 0 20px;
+}
+
+#produkt h1 {
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+#produkt h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+#produkt .pris {
+    font-size: 1.1em;
+}
+
+#produkt #samme_header {
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+#produkt button {
+    width: 7em;
+    height: 2.2em;
+    font-size: 1.2em;
+    margin: 0px 0px 20px 20px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    color: #FFF;
+    background-color: #222;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background-image: url(img/wood-1759566_1920.jpg);
+}
+
+#produkt #dest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #4b736d;
+}
+
+#produkt #dest article {
+    overflow: hidden;
+    position: relative;
+}
+
+#produkt #dest img {
+    transform: scale(1.1);
+    margin: 0;
+}
+
+#produkt #dest .navn,
+#produkt #dest .materialer,
+#produkt #dest .pris,
+#produkt #dest .overlay {
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#produkt #dest .navn,
+#produkt #dest .materialer,
+#produkt #dest .pris {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    color: #eee;
+}
+
+#produkt #dest .overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+}
+
+#produkt #dest .navn {
+    top: 40px;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#produkt #dest .materialer {
+    top: 5.6em;
+    font-style: italic;
+    width: 80%;
+}
+
+#produkt #dest .pris {
+    bottom: 2em;
+    font-size: 1.2em;
 }
 
 /*######  LOOKBOOK   ######*/
@@ -749,6 +904,36 @@ input {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* Produkt */
+    #produkt .billede {
+        max-width: 500px;
+        margin: 17vw auto 0 auto;
+    }
+
+    #produkt #text_box,
+    #produkt h1 {
+        max-width: 540px;
+        margin: 0 auto
+    }
+
+    #produkt h1 {
+        width: 500px;
+        padding: 20px 0;
+    }
+
+    #produkt button {
+        margin: 20px auto;
+    }
+
+    #produkt #dest {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #produkt #samme_header {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
     /* Kontakt */
     #kontakt {
         max-width: 500px;
@@ -901,6 +1086,49 @@ input {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    #produkter #dest article:hover .navn,
+    #produkter #dest article:hover .materialer,
+    #produkter #dest article:hover .pris,
+    #produkter #dest article:hover .overlay {
+        opacity: 1;
+    }
+
+    /* Produkt */
+    #produkt {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        padding-top: 180px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #produkt h1 {
+        grid-area: 1 / 1 / 2 / 3;
+        margin: 20px 0;
+        font-size: 1.8em;
+    }
+
+    #produkt .billede {
+        grid-area: 2 / 1 / 5 / 2;
+        margin: 0;
+    }
+
+    #produkt #dest article:hover .navn,
+    #produkt #dest article:hover .materialer,
+    #produkt #dest article:hover .pris,
+    #produkt #dest article:hover .overlay {
+        opacity: 1;
+    }
+
+    #produkt #samme_header {
+        grid-area: 5 / 1 / 6 / 3;
+        margin: 40px 10px 20px 10px;
+    }
+
+    #produkt #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-area: 6 / 1 / 7 / 3;
+    }
 
     /* Kontakt */
     #kontakt {

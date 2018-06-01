@@ -36,12 +36,14 @@
         <!--    bruges til at kopiere ind i dest -->
 
         <template data-template>
-            <article>
-                <div data-beskrivelse class="beskrivelse"></div>
+            <article data-container>
+                <div data-navn class="navn"></div>
                 <div data-pris class="pris"></div>
                 <div data-materialer class="materialer"></div>
 
-                <div><img data-billede src="" alt=""></div>
+                <div class="overlay"></div>
+
+                <div><img data-billede src="" alt="" class="billede"></div>
             </article>
         </template>
 

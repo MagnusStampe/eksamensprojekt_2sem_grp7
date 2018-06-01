@@ -31,17 +31,26 @@ function visProdukter(kategori) {
             console.log(kategori)
             let klon = temp.cloneNode(true).content;
 
+            //Indsæt billede med "src" og "alt"
             klon.querySelector("[data-billede]").src = produkt.acf.billede.url;
             klon.querySelector("[data-billede]").alt = produkt.acf.navn;
+
+            //Indsæt navn, materialer og pris som kan ses ved hover på desktop
+            klon.querySelector("[data-navn]").textContent = produkt.acf.navn;
+            klon.querySelector("[data-materialer]").textContent = produkt.acf.materialer;
+            klon.querySelector("[data-pris]").textContent = produkt.acf.pris;
+
+            //Send til produkt.html med id
+            klon.querySelector("[data-container]").addEventListener("click", () => {
+                location.href = "produkt.html?id=" + produkt.id + "&kategori=" + produkt.acf.kategori;
+            });
+
             dest.appendChild(klon);
         }
     });
 }
 
 function slide() {
-    console.log("slide()");
-
-
     document.querySelector(".next").addEventListener("click", () => {
 
         //Skift til stole
@@ -52,7 +61,6 @@ function slide() {
             slideKat = "stole";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -64,7 +72,6 @@ function slide() {
             slideKat = "lamper";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -76,7 +83,6 @@ function slide() {
             slideKat = "plankeborde";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
         }
@@ -92,7 +98,6 @@ function slide() {
             slideKat = "lamper";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -104,7 +109,6 @@ function slide() {
             slideKat = "Plankeborde";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -116,7 +120,6 @@ function slide() {
             slideKat = "stole";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
         }
