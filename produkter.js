@@ -2,7 +2,7 @@ let billede = [];
 document.addEventListener("DOMContentLoaded", loaded);
 
 let slideNum = 1;
-let slideKat = "Plankeborde";
+let slideKat = "plankeborde";
 
 function loaded() {
     hentJson();
@@ -10,8 +10,7 @@ function loaded() {
 }
 
 async function hentJson() {
-    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkter");
-    //let jsonData = await fetch("test.json");
+    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkterne");
     produkter = await jsonData.json();
 
     visProdukter(slideKat);
@@ -62,7 +61,7 @@ function slide() {
             console.log("2 til 3")
 
             slideNum++;
-            slideKat = "Lamper";
+            slideKat = "lamper";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
             console.log('url("img/produktKat' + slideNum + '.jpg")');
@@ -74,7 +73,7 @@ function slide() {
             console.log("3 til 1")
 
             slideNum = 1;
-            slideKat = "Plankeborde";
+            slideKat = "plankeborde";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
             console.log('url("img/produktKat' + slideNum + '.jpg")');
@@ -90,7 +89,7 @@ function slide() {
             console.log("1 til 3")
 
             slideNum = 3;
-            slideKat = "Lamper";
+            slideKat = "lamper";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
             console.log('url("img/produktKat' + slideNum + '.jpg")');
