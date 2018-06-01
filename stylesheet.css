@@ -105,7 +105,7 @@ header.include img {
 
 #header_bar {
     width: 100%;
-    height: 25vw;
+    height: 35vw;
     background-color: #4b736d;
 
     position: absolute;
@@ -285,11 +285,11 @@ footer strong {
 }
 
 #forside_container .citat {
-    font-size: 5em;
+    font-size: 3em;
     font-family: cursive;
     position: absolute;
-    top: 33vw;
-    right: 90vw;
+    top: 115vw;
+    right: 83vw;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -620,8 +620,9 @@ footer strong {
 
 #om #kasper {
 
-    width: 140vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
+
 
 
 }
@@ -653,6 +654,7 @@ footer strong {
     font-family: 'Cinzel', serif;
     color: #ffff;
     font-size: 1.7em;
+    margin-top: 0;
 
 
 }
@@ -1078,7 +1080,14 @@ input {
         top: 10vw;
         transform: scale(3);
     }
-
+    #forside_container .citat {
+        font-size: 3em;
+        font-family: cursive;
+        position: absolute;
+        top: 40vw;
+        right: 90vw;
+        background-color: rgba(0, 0, 0, 0);
+    }
     /* Produkter */
     #produkter {
         max-width: 1300px;
