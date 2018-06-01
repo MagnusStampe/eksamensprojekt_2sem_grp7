@@ -4,36 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Funky Furniture</title>
+    <title></title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,700" rel="stylesheet">
 </head>
 
 <body>
+
     <header class="include"></header>
     <nav class="include"></nav>
 
-    <main id="produkter">
+    <main id="produkt">
 
-        <h1>Produkter</h1>
+        <img class="billede" data-billede>
 
-        <section id="slideshow">
+        <h1 class="navn" data-navn></h1>
 
-            <button class="next but"></button>
-            <button class="prev but"></button>
-            <h2 class="slide_headline">plankeborde</h2>
-            <div class="bar"></div>
+        <div id="text_box">
+            <h2>Materialer</h2>
+            <p class="materialer" data-materialer></p>
+            <h2>Beskrivelse af produktet</h2>
+            <p class="beskrivelse" data-beskrivelse></p>
+            <p class="pris" data-pris></p>
+        </div>
 
-            <div class="slide"></div>
+        <button>Læg i kurv</button>
 
-        </section>
+        <h2 id="samme_header">Produkter af samme kategori</h2>
 
-
-        <!--   lokationen for produkt-data -->
-
-        <section data-dest id="dest"></section>
-
-        <!--    bruges til at kopiere ind i dest -->
+        <section id="dest" data-dest></section>
 
         <template data-template>
             <article data-container>
@@ -49,12 +48,12 @@
 
     </main>
 
-    <div id="baggrund_fixed"></div>
-
     <footer class="include"></footer>
 
-    <script src="produkter.js"></script>
+    <div id="baggrund_fixed"></div>
+
     <script src="includes.js"></script>
+    <script src="produkt.js"></script>
 </body>
 
 </html>

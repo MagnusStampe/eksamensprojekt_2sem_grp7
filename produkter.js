@@ -2,7 +2,7 @@ let billede = [];
 document.addEventListener("DOMContentLoaded", loaded);
 
 let slideNum = 1;
-let slideKat = "Plankeborde";
+let slideKat = "plankeborde";
 
 function loaded() {
     hentJson();
@@ -10,8 +10,7 @@ function loaded() {
 }
 
 async function hentJson() {
-    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkter");
-    //let jsonData = await fetch("test.json");
+    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkterne");
     produkter = await jsonData.json();
 
     visProdukter(slideKat);
@@ -32,17 +31,26 @@ function visProdukter(kategori) {
             console.log(kategori)
             let klon = temp.cloneNode(true).content;
 
+            //Indsæt billede med "src" og "alt"
             klon.querySelector("[data-billede]").src = produkt.acf.billede.url;
             klon.querySelector("[data-billede]").alt = produkt.acf.navn;
+
+            //Indsæt navn, materialer og pris som kan ses ved hover på desktop
+            klon.querySelector("[data-navn]").textContent = produkt.acf.navn;
+            klon.querySelector("[data-materialer]").textContent = produkt.acf.materialer;
+            klon.querySelector("[data-pris]").textContent = produkt.acf.pris;
+
+            //Send til produkt.html med id
+            klon.querySelector("[data-container]").addEventListener("click", () => {
+                location.href = "produkt.html?id=" + produkt.id + "&kategori=" + produkt.acf.kategori;
+            });
+
             dest.appendChild(klon);
         }
     });
 }
 
 function slide() {
-    console.log("slide()");
-
-
     document.querySelector(".next").addEventListener("click", () => {
 
         //Skift til stole
@@ -53,7 +61,6 @@ function slide() {
             slideKat = "stole";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -62,10 +69,9 @@ function slide() {
             console.log("2 til 3")
 
             slideNum++;
-            slideKat = "Lamper";
+            slideKat = "lamper";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -74,10 +80,9 @@ function slide() {
             console.log("3 til 1")
 
             slideNum = 1;
-            slideKat = "Plankeborde";
+            slideKat = "plankeborde";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
         }
@@ -90,10 +95,9 @@ function slide() {
             console.log("1 til 3")
 
             slideNum = 3;
-            slideKat = "Lamper";
+            slideKat = "lamper";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -105,7 +109,6 @@ function slide() {
             slideKat = "Plankeborde";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
 
@@ -117,7 +120,6 @@ function slide() {
             slideKat = "stole";
 
             document.querySelector(".slide").style.backgroundImage = 'url("img/produktKat' + slideNum + '.jpg")';
-            console.log('url("img/produktKat' + slideNum + '.jpg")');
 
             visProdukter(slideKat);
         }
