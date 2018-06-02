@@ -219,12 +219,9 @@ footer {
     color: #ddd;
 }
 
-footer a {
-    text-decoration: underline;
-    font-family: 'Roboto Slab', serif;
-    color: #90bdbb;
 
-}
+
+
 
 a:hover {
     color: #ddd;
@@ -264,8 +261,70 @@ footer strong {
     text-align: center;
     padding: 0 20px;
     font-family: 'Roboto Slab', serif;
-    font-weight: 300;
+    font-weight: 700;
 
+}
+
+#forside_container #tilmeld {
+    position: absolute;
+    color: #ffffff;
+    background-color: #4b736d;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    right: 0;
+    top: 5vw;
+}
+
+#forside_container #popup {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+
+}
+
+
+#forside_container #popup.show {
+    display: block;
+}
+
+#forside_container #clickable {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 501;
+
+}
+
+#forside_container #popup_vindue {
+    width: 90%;
+    left: 5%;
+    top: 20%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: #4b736d;
+    padding: 20px;
+    z-index: 503;
+}
+
+#forside_container #popup_vindue #luk {
+    position: absolute;
+    right: 20px;
+    margin: 0;
+}
+
+#forside_container #popup_vindue h2 {
+    margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
 }
 
 #forside_container p {
@@ -307,23 +366,39 @@ footer strong {
 
 /*######  PRODUKTER  ######*/
 
-#baggrund_fixed {
-    background-image: url(img/IMG_1464.JPG);
-    background-size: cover;
-
-}
-
-
-
 #produkter h1 {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
-    margin-top: 35vw;
+    margin-top: 5vw;
     color: #fff;
+    position: absolute;
+}
+
+#produkter a {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-left: 1px;
+    font-family: 'Roboto Slab', serif;
+    padding: 5px;
+    bottom: 320px;
+    position: absolute;
+    margin-left: 1px;
+
+}
+
+#produkter p {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-left: 1px;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+    bottom: 320px;
 }
 
 #produkter #slideshow {
     position: relative;
+    margin-top: 30vw;
 }
 
 #produkter .but {
@@ -358,6 +433,7 @@ footer strong {
     background-position: bottom;
     background-repeat: no-repeat;
 
+
 }
 
 #produkter .slide_headline {
@@ -387,6 +463,7 @@ footer strong {
     grid-gap: 10px;
     padding: 10px;
     background-color: #4b736d;
+    top: 10px;
 }
 
 #produkter #dest article {
@@ -625,12 +702,19 @@ footer strong {
 
     width: 100%;
     height: 100%;
+    margin-top: 30vw;
 
 
 
 }
 
+#om iframe {
+    width: 100vw;
+    display: grid;
+    padding: 5vw;
+    grid-template-columns: 1fr, 1fr;
 
+}
 
 #om #om_kasper {
     padding: 20px 20px;
@@ -658,13 +742,29 @@ footer strong {
     color: #ffff;
     font-size: 1.7em;
     margin-top: 0;
-
-
 }
 
-#om .v_bracket.animate {
+#om .text_svg {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#om .logo_svg {
+    transition: 0.2s;
+}
+
+#om .lag:hover .text_svg {
+    opacity: 1;
+    transition: 1.8s transition-timing-function: cubic-bezier(0, 0, 1.0, 0.1);
+}
+
+#om .lag:hover .logo_svg {
+    opacity: 0;
+}
+
+#om .lag:hover .v_bracket {
     animation-name: v_bracket_kf;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
@@ -673,19 +773,17 @@ footer strong {
         transform: translateX(0);
     }
     50% {
-        transform: translateX(50px);
+        transform: translateX(10%);
     }
     100% {
         transform: translateX(0);
     }
 }
 
-#om .h_bracket.animate {
+#om .lag:hover .h_bracket {
     animation-name: h_bracket_kf;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: 0.5s;
-    transform: translateX(0);
 }
 
 @keyframes h_bracket_kf {
@@ -693,29 +791,11 @@ footer strong {
         transform: translateX(0);
     }
     50% {
-        transform: translateX(-50px);
+        transform: translateX(-10%);
     }
     100% {
         transform: translateX(0);
     }
-}
-
-#om .logo_svg {
-    transition: 0.2s;
-}
-
-#om .logo_svg.animate {
-    opacity: 0;
-}
-
-#om .text_svg {
-    opacity: 0;
-    z-index: 2;
-    transition: 2s;
-}
-
-#om .text_svg.animate {
-    opacity: 1;
 }
 
 /*
@@ -767,13 +847,9 @@ footer strong {
 
 #kontakt_box input,
 #kontakt_box textarea {
-
-
     padding: 20px;
     transition: 0.5s;
     font-family: 'Roboto Slab', serif;
-
-
 }
 
 #kontakt_box .tilbage {
@@ -1148,14 +1224,86 @@ input {
         font-size: 3em;
         font-family: cursive;
         position: absolute;
-        top: 35vw;
+        margin-top: 35vw;
         right: 90vw;
-        background-color: rgba(0, 0, 0, 0);
+
+        font-weight: 300;
     }
 
     #forside_container p {
         font-size: 1.5em;
+        font-weight: 300;
+        background-color: rgba(0, 0, 0, 0.18);
+
     }
+
+    #forside_container #tilmeld {
+        display: none;
+
+
+
+    }
+    #forside_container #popup_vindue h2 {
+        margin-left: 50%;
+        bottom: 350px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.18);
+    }
+    #forside_container #popup #tilmeldknap {
+        margin-left: 70%;
+        height: 50px;
+        width: 10%;
+        font-size: 1em;
+        bottom: 250px;
+        position: absolute;
+    }
+    #forside_container #popup #email {
+        margin-left: 50%;
+        height: 40px;
+        width: 200px;
+        bottom: 250px;
+        position: absolute;
+    }
+    #forside_container #popup {
+        display: block;
+        margin-left: 20%;
+
+
+
+
+    }
+    #forside_container #luk {
+        display: none;
+    }
+    #forside_container #popup_vindue {
+        width: 90%;
+        left: 5%;
+        top: 80%;
+        position: absolute;
+        margin: 0 auto;
+        background-color: rgba(75, 115, 109, 0);
+        padding: 20px;
+        z-index: 503;
+        margin-left: 10;
+
+    }
+
+    #forside_container #clickable {
+        display: none;
+    }
+    #forside_container button {
+        align-self: center;
+        background-color: #4b736d;
+        color: #ffffff;
+        border: 0;
+    }
+
+    #forside_container #popup_vindue h2 {
+        color: #ffffff;
+        margin-top: 15px;
+
+    }
+
     /* Produkter */
     #produkter {
         max-width: 1300px;
@@ -1172,8 +1320,9 @@ input {
 
     }
 
-    #produkter .slide {
+    #produkter #slideshow {
         height: 600px;
+        margin-top: 5px;
     }
 
     #produkter .but {
@@ -1185,6 +1334,7 @@ input {
 
     #produkter #dest {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
     }
 
     #produkter #dest article:hover .navn,
@@ -1330,6 +1480,10 @@ input {
 
         width: 100vw;
         background-size: cover;
+    }
+
+    #produkter #dest {
+        margin-top: 170px;
     }
 }
 
