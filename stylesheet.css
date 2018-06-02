@@ -219,19 +219,12 @@ footer {
     color: #ddd;
 }
 
-footer a {
-    text-decoration: underline;
-    font-family: 'Roboto Slab', serif;
-    color: #90bdbb;
-
-}
-
-a:hover {
+footer a:hover {
     color: #ddd;
 }
 
 footer p,
-address {
+footer address {
     font-family: 'Roboto Slab', serif;
     margin-top: 0.5px;
 }
@@ -270,11 +263,13 @@ footer strong {
 
 #forside_container #tilmeld {
     position: absolute;
-
-    background-color: pink;
-
+    color: #ffffff;
+    background-color: #4b736d;
+    font-family: 'Roboto Slab', serif;
     padding: 10px;
-
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
     right: 0;
     top: 5vw;
 }
@@ -287,8 +282,9 @@ footer strong {
     top: 0;
     left: 0;
     z-index: 500;
-    background-color: rgba(0, 0, 0, 0.4);
+
 }
+
 
 #forside_container #popup.show {
     display: block;
@@ -301,6 +297,7 @@ footer strong {
     left: 0;
     top: 0;
     z-index: 501;
+
 }
 
 #forside_container #popup_vindue {
@@ -309,7 +306,7 @@ footer strong {
     top: 20%;
     position: absolute;
     margin: 0 auto;
-    background-color: #333;
+    background-color: #4b736d;
     padding: 20px;
     z-index: 503;
 }
@@ -322,6 +319,8 @@ footer strong {
 
 #forside_container #popup_vindue h2 {
     margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
 }
 
 #forside_container p {
@@ -458,8 +457,9 @@ footer strong {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    padding: 30px;
+    padding: 10px;
     background-color: #4b736d;
+    top: 10px;
 }
 
 #produkter #dest article {
@@ -698,12 +698,19 @@ footer strong {
 
     width: 100%;
     height: 100%;
+    margin-top: 30vw;
 
 
 
 }
 
+#om iframe {
+    width: 100vw;
+    display: grid;
+    padding: 5vw;
+    grid-template-columns: 1fr, 1fr;
 
+}
 
 #om #om_kasper {
     padding: 20px 20px;
@@ -1050,7 +1057,6 @@ input {
     #lag-7 {
         transform: scale(0.3) translate(0%, 64%);
     }
-
     #lag-8 {
         transform: scale(0.3) translate(-34.5%, 80%);
     }
@@ -1063,399 +1069,584 @@ input {
         transform: scale(0.3) translate(0%, 120%);
     }
 
-    @media screen and (min-width: 530px) and (max-width: 1000px) {
-        /*#######  TABLET   #######*/
-        /* Header */
-        #header_bar {
-            height: 30vw;
-        }
 
-        header.include img {
-            width: 22vw;
-        }
+}
 
-        /* Navigation menu */
-        #burger {
-            width: 8vw;
-            height: 8vw;
-        }
-
-        #burger div {
-            width: 6vw;
-            height: 0.8vw;
-            margin: 1.4vw 1vw;
-        }
-
-        nav.include.open #burger div:first-child {
-            transform: rotate(-45deg) translateX(-1.6vw) translateY(1.4vw);
-        }
-
-        nav.include.open #burger div:last-child {
-            transform: rotate(45deg) translateX(-1.6vw) translateY(-1.4vw);
-        }
-
-        /* Produkter */
-        #produkter #dest {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        /* Produkt */
-        #produkt .billede {
-            max-width: 500px;
-            margin: 17vw auto 0 auto;
-        }
-
-        #produkt #text_box,
-        #produkt h1 {
-            max-width: 540px;
-            margin: 0 auto
-        }
-
-        #produkt h1 {
-            width: 500px;
-            padding: 20px 0;
-        }
-
-        #produkt button {
-            margin: 20px auto;
-        }
-
-        #produkt #dest {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        #produkt #samme_header {
-            margin-left: 10px;
-            margin-top: 20px;
-        }
-
-        /* Kontakt */
-        #kontakt {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        #kontakt #map {
-            width: 100%;
-            height: 30vw;
-        }
-
-        /* Lookbook */
-        #lookbook .sort_btn {
-            height: 7vw;
-            width: 19vw;
-        }
-
-        #lookbook .sort_btn.selected {
-            width: 22vw;
-        }
-
-        /* Kurv */
-        #kurv_box {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        #kurv h1 {
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-top: 150px;
-            display: block;
-        }
-
+@media screen and (min-width: 530px) and (max-width: 1000px) {
+    /*#######  TABLET   #######*/
+    /* Header */
+    #header_bar {
+        height: 30vw;
+    }
+    #produkter #slideshow {
+        height: 600px;
+        margin-top: 5px;
+    }
+    header.include img {
+        width: 22vw;
     }
 
 
-    /*#######  DESKTOP  #######*/
-    @media screen and (min-width: 1000px) {
+    /* Navigation menu */
+    #burger {
+        width: 8vw;
+        height: 8vw;
+    }
+    #produkter #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
-        /* Header */
-        header.include #header_bar {
-            display: none;
-        }
-
-        header.include img {
-            left: 10px;
-            top: 10px;
-            width: 170px;
-            z-index: 200;
-        }
-
-        footer {
-            display: grid;
-
-        }
-
-        footer p,
-        address,
-        a {
-            grid-area: 1;
-        }
-
-        /* Navigation menu (Becomming the header)*/
-        #burger {
-            display: none;
-        }
-
-        nav.include {
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background-color: #4b736d;
-            background-size: cover;
-            background-position: center;
-
-            position: absolute;
-        }
-
-        #nav_content {
-            position: absolute;
-            width: auto;
-            height: auto;
-            background-color: transparent;
-            right: 20px;
-            top: 60px;
-            padding-right: 100px;
-        }
-
-        #nav_content form {
-            display: inline-block;
-            margin: 0;
-        }
-
-        #nav_content button {
-            width: auto;
-            font-size: 0.9em;
-            margin: 0 6px;
-        }
-
-        #nav_content button:hover {
-            color: #ccc;
-            transform: scale(0.95);
-        }
-
-        nav .logo {
-            position: absolute;
-            display: block;
-            height: auto;
-            width: 100px;
-            top: -10px;
-            right: -10px;
-            left: auto;
-        }
-
-        nav .logo img {
-            width: 30px;
-            margin: 5px;
-        }
-
-        /* Forside */
-        #baggrund_fixed.forside iframe {
-            width: 100vw;
-            height: 42vw;
-            filter: blur(3px);
-            position: absolute;
-            top: 10vw;
-            transform: scale(3);
-        }
-        #forside_container .citat {
-            font-size: 3em;
-            font-family: cursive;
-            position: absolute;
-            top: 35vw;
-            right: 90vw;
-            background-color: rgba(0, 0, 0, 0);
-            font-weight: 300;
-        }
-
-        #forside_container p {
-            font-size: 1.5em;
-            font-weight: 300;
-        }
-        /* Produkter */
-        #produkter {
-            max-width: 1300px;
-
-        }
-
-        #produkter h1 {
-            margin-top: 200px;
-        }
-
-        #slideshow {
-            max-width: 1400px;
-            left: 0;
-
-        }
-
-        #produkter .slide {
-            height: 600px;
-            margin-top: 0px;
-        }
-
-        #produkter .but {
-            top: 270px;
-            height: 50px;
-            width: 70px;
-            background-size: 29%;
-        }
-
-        #produkter #dest {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-        #produkter #dest article:hover .navn,
-        #produkter #dest article:hover .materialer,
-        #produkter #dest article:hover .pris,
-        #produkter #dest article:hover .overlay {
-            opacity: 1;
-        }
-
-        /* Produkt */
-        #produkt {
-            grid-template-columns: 1fr 1fr;
-            padding: 20px;
-            padding-top: 180px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #produkt h1 {
-            grid-area: 1 / 1 / 2 / 3;
-            margin: 20px 0;
-            font-size: 1.8em;
-        }
-
-        #produkt .billede {
-            grid-area: 2 / 1 / 5 / 2;
-            margin: 0;
-        }
-
-        #produkt #dest article:hover .navn,
-        #produkt #dest article:hover .materialer,
-        #produkt #dest article:hover .pris,
-        #produkt #dest article:hover .overlay {
-            opacity: 1;
-        }
-
-        #produkt #samme_header {
-            grid-area: 5 / 1 / 6 / 3;
-            margin: 40px 10px 20px 10px;
-        }
-
-        #produkt #dest {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-area: 6 / 1 / 7 / 3;
-        }
-
-        /* Kontakt */
-        #kontakt {
-            padding-top: 200px;
-            display: grid;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            grid-template-columns: 60% 40%;
-            grid-template-rows: 80px 580px auto;
-        }
-
-        #kontakt h1 {
-            grid-area: 1 / 1 / 2 / 3;
-            margin: 0 20px;
-        }
-
-        #kontakt #kontakt_box {
-            grid-area: 2 / 1 / 3 / 2;
-            padding: 20px;
-            background-color: rgba(90, 88, 88, 0.23);
-        }
-
-        #kontakt #info_box {
-            grid-area: 2 / 2 / 3 / 3;
-        }
-
-        #kontakt .singlemap {
-            grid-area: 3 / 1 / 4 / 3;
-        }
-        #kontakt #map {
-            width: 1200px;
-            height: 300px;
-            margin: 0px 0px 0px 0px;
-        }
-
-        /* Kurv */
-        #kurv_box {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        #kurv h1 {
-            max-width: 1000px;
-            margin: 0px auto 10px auto;
-            padding-left: 20px;
-        }
-
-        /* Lookbook */
-        #lookbook .sort_btn {
-            width: 100px;
-            height: 40px;
-            font-size: 1.2em;
-        }
-        #lookbook .sort_btn.selected {
-            width: 130px;
-        }
-
-        #lookbook #privat {
-            top: 200px;
-        }
-        #lookbook #erhverv {
-            top: 255px;
-        }
-
-        #lookbook #dest {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        }
-
-        #lookbook h1 {}
-
-        /* Om os */
-        #om #kasper {
-            width: 100%;
-            height: 100%;
-
-        }
-
-        #om #om_kasper p {
-            font-size: 1.2em;
-
-            padding: 10px;
-
-
-        }
-
-        #om button {
-            width: 10vw;
-            font-size: 2vw;
-            height: 4vw;
-        }
-
-        #om h1 {
-            margin-top: 20px;
-        }
-
-        #baggrund_fixed {
-
-            width: 100vw;
-            background-size: cover;
-        }
+    }
+    #burger div {
+        width: 6vw;
+        height: 0.8vw;
+        margin: 1.4vw 1vw;
     }
 
-
-
-    @media screen and (min-width: 1300px) {
-        #lookbook #dest {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        }
+    nav.include.open #burger div:first-child {
+        transform: rotate(-45deg) translateX(-1.6vw) translateY(1.4vw);
     }
+
+    nav.include.open #burger div:last-child {
+        transform: rotate(45deg) translateX(-1.6vw) translateY(-1.4vw);
+    }
+
+    /* Produkter */
+    #produkter #dest {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Produkt */
+    #produkt .billede {
+        max-width: 500px;
+        margin: 17vw auto 0 auto;
+    }
+
+    #produkt #text_box,
+    #produkt h1 {
+        max-width: 540px;
+        margin: 0 auto
+    }
+
+    #produkt h1 {
+        width: 500px;
+        padding: 20px 0;
+    }
+
+    #produkt button {
+        margin: 20px auto;
+    }
+
+    #produkt #dest {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #produkt #samme_header {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    /* Kontakt */
+    #kontakt {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #kontakt #map {
+        width: 100%;
+        height: 30vw;
+    }
+
+    /* Lookbook */
+    #lookbook .sort_btn {
+        height: 7vw;
+        width: 19vw;
+    }
+
+    #lookbook .sort_btn.selected {
+        width: 22vw;
+    }
+
+    /* Kurv */
+    #kurv_box {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #kurv h1 {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-top: 150px;
+        display: block;
+    }
+
+}
+
+
+/*#######  DESKTOP  #######*/
+
+@media screen and (min-width: 1000px) {
+
+    /* Header */
+    header.include #header_bar {
+        display: none;
+    }
+
+    header.include img {
+        left: 10px;
+        top: 10px;
+        width: 170px;
+        z-index: 200;
+    }
+
+    footer {
+        display: grid;
+
+    }
+
+    footer p,
+    address,
+    a {
+        grid-area: 1;
+    }
+
+    /* Navigation menu (Becomming the header)*/
+    #burger {
+        display: none;
+    }
+
+    nav.include {
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #4b736d;
+        background-size: cover;
+        background-position: center;
+
+        position: absolute;
+    }
+
+    #nav_content {
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        right: 20px;
+        top: 60px;
+        padding-right: 100px;
+    }
+
+    #nav_content form {
+        display: inline-block;
+        margin: 0;
+    }
+
+    #nav_content button {
+        width: auto;
+        font-size: 0.9em;
+        margin: 0 6px;
+    }
+
+    #nav_content button:hover {
+        color: #ccc;
+        transform: scale(0.95);
+    }
+
+    nav .logo {
+        position: absolute;
+        display: block;
+        height: auto;
+        width: 100px;
+        top: -10px;
+        right: -10px;
+        left: auto;
+    }
+
+    nav .logo img {
+        width: 30px;
+        margin: 5px;
+    }
+
+    /* Forside */
+    #baggrund_fixed.forside iframe {
+        width: 100vw;
+        height: 42vw;
+        filter: blur(3px);
+        position: absolute;
+        top: 10vw;
+        transform: scale(3);
+    }
+    #forside_container .citat {
+        font-size: 3em;
+        font-family: cursive;
+        position: absolute;
+        top: 35vw;
+        right: 90vw;
+        background-color: rgba(0, 0, 0, 0);
+        font-weight: 300;
+    }
+
+    #forside_container p {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    /* Produkter */
+    #produkter {
+        max-width: 1300px;
+
+    }
+
+    #produkter h1 {
+        margin-top: 200px;
+    }
+
+    #slideshow {
+        max-width: 1400px;
+        left: 0;
+
+    }
+
+    #produkter .slide {
+        height: 600px;
+        margin-top: 0px;
+    }
+
+    #produkter .but {
+        top: 270px;
+        height: 50px;
+        width: 70px;
+        background-size: 29%;
+    }
+
+    #produkter #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #produkter #dest article:hover .navn,
+    #produkter #dest article:hover .materialer,
+    #produkter #dest article:hover .pris,
+    #produkter #dest article:hover .overlay {
+        opacity: 1;
+    }
+
+    /* Produkt */
+    #produkt {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        padding-top: 180px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #produkt h1 {
+        grid-area: 1 / 1 / 2 / 3;
+        margin: 20px 0;
+        font-size: 1.8em;
+    }
+
+    #produkt .billede {
+        grid-area: 2 / 1 / 5 / 2;
+        margin: 0;
+    }
+
+    #produkt #dest article:hover .navn,
+    #produkt #dest article:hover .materialer,
+    #produkt #dest article:hover .pris,
+    #produkt #dest article:hover .overlay {
+        opacity: 1;
+    }
+
+    #produkt #samme_header {
+        grid-area: 5 / 1 / 6 / 3;
+        margin: 40px 10px 20px 10px;
+    }
+
+    #produkt #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-area: 6 / 1 / 7 / 3;
+    }
+
+    /* Kontakt */
+    #kontakt {
+        padding-top: 200px;
+        display: grid;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 80px 580px auto;
+    }
+
+    #kontakt h1 {
+        grid-area: 1 / 1 / 2 / 3;
+        margin: 0 20px;
+    }
+
+    #kontakt #kontakt_box {
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 20px;
+        background-color: rgba(90, 88, 88, 0.23);
+    }
+
+    #kontakt #info_box {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    #kontakt .singlemap {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    #kontakt #map {
+        width: 1200px;
+        height: 300px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* Kurv */
+    #kurv_box {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #kurv h1 {
+        max-width: 1000px;
+        margin: 0px auto 10px auto;
+        padding-left: 20px;
+    }
+
+    /* Lookbook */
+    #lookbook .sort_btn {
+        width: 100px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+    #lookbook .sort_btn.selected {
+        width: 130px;
+    }
+
+    #lookbook #privat {
+        top: 200px;
+    }
+    #lookbook #erhverv {
+        top: 255px;
+    }
+
+    #lookbook #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #lookbook h1 {}
+
+    /* Om os */
+    #om #kasper {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #om #om_kasper p {
+        font-size: 1.2em;
+
+        padding: 10px;
+
+
+    }
+
+    #om button {
+        width: 10vw;
+        font-size: 2vw;
+        height: 4vw;
+    }
+
+    #om h1 {
+        margin-top: 20px;
+    }
+
+    #baggrund_fixed {
+
+        width: 100vw;
+        background-size: cover;
+    }
+}
+
+
+
+@media screen and (min-width: 1300px) {
+
+    /* Forside */
+    #baggrund_fixed.forside iframe {
+        width: 100vw;
+        height: 42vw;
+        filter: blur(3px);
+        position: absolute;
+        top: 10vw;
+        transform: scale(3);
+    }
+
+    #forside_container .citat {
+        font-size: 3em;
+        font-family: cursive;
+        position: absolute;
+        margin-top: 35vw;
+        right: 90vw;
+
+        font-weight: 300;
+    }
+
+    #forside_container p {
+        font-size: 1.5em;
+        font-weight: 300;
+        background-color: rgba(0, 0, 0, 0.18);
+
+    }
+
+    #forside_container #tilmeld {
+        display: none;
+
+
+
+    }
+
+    #forside_container #popup_vindue h2 {
+        margin-left: 50%;
+        bottom: 350px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.18);
+    }
+
+    #forside_container #popup #tilmeldknap {
+        margin-left: 70%;
+        height: 50px;
+        width: 10%;
+        font-size: 1em;
+        bottom: 250px;
+        position: absolute;
+    }
+
+    #forside_container #popup #email {
+        margin-left: 50%;
+        height: 40px;
+        width: 200px;
+        bottom: 250px;
+        position: absolute;
+    }
+
+    #forside_container #popup {
+        display: block;
+        margin-left: 20%;
+
+
+
+
+    }
+
+    #forside_container #luk {
+        display: none;
+    }
+
+    #forside_container #popup_vindue {
+        width: 90%;
+        left: 5%;
+        top: 80%;
+        position: absolute;
+        margin: 0 auto;
+        background-color: rgba(75, 115, 109, 0);
+        padding: 20px;
+        z-index: 503;
+        margin-left: 10;
+
+    }
+
+    #forside_container #clickable {
+        display: none;
+    }
+
+    #forside_container button {
+        align-self: center;
+        background-color: #4b736d;
+        color: #ffffff;
+        border: 0;
+    }
+
+    #forside_container #popup_vindue h2 {
+        color: #ffffff;
+        margin-top: 15px;
+
+    }
+
+    #lookbook #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #kurv h1 {
+        max-width: 1000px;
+        margin: 0px auto 10px auto;
+        padding-left: 20px;
+    }
+
+    /* Lookbook */
+    #lookbook .sort_btn {
+        width: 100px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+    #lookbook .sort_btn.selected {
+        width: 130px;
+    }
+
+    #lookbook #privat {
+        top: 200px;
+    }
+    #lookbook #erhverv {
+        top: 255px;
+    }
+
+    #lookbook #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #lookbook h1 {}
+
+    /* Om os */
+    #om #kasper {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #om #om_kasper p {
+        font-size: 1.2em;
+
+        padding: 10px;
+
+
+    }
+
+    #om button {
+        width: 10vw;
+        font-size: 2vw;
+        height: 4vw;
+    }
+
+    #om h1 {
+        margin-top: 20px;
+    }
+
+    #baggrund_fixed {
+
+        width: 100vw;
+        background-size: cover;
+    }
+
+    #produkter #dest {
+        margin-top: 170px;
+    }
+}
+
+
+
+@media screen and (min-width: 1300px) {
+    #lookbook #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
