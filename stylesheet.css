@@ -24,7 +24,7 @@ h2,
 h3,
 h4,
 p,
-address {
+    {
     cursor: default;
     color: #fafafa;
 }
@@ -132,7 +132,7 @@ nav.include {
     top: 0;
     position: absolute;
     z-index: 150;
-    background-color: rgba(50, 50, 50, 0.8);
+    background-color: rgba(75, 115, 109, 0.8);
 }
 
 #nav_content form {
@@ -159,7 +159,7 @@ nav.include {
     height: 12vw;
     top: 5vw;
     left: 300px;
-    background-color: rgba(50, 50, 50, 0.8);
+    background-color: rgba(75, 115, 109, 0.8);
     position: absolute;
     z-index: 150;
     cursor: pointer;
@@ -230,8 +230,10 @@ a:hover {
     color: #ddd;
 }
 
-footer p {
+footer p,
+address {
     font-family: 'Roboto Slab', serif;
+    margin-top: 0.5px;
 }
 
 footer strong {
@@ -257,7 +259,7 @@ footer strong {
     margin-top: 5vh;
     color: #ffffff;
 
-    font-size: 1.3em;
+    font-size: 1.1em;
     align-self: center;
     text-align: center;
     padding: 0 20px;
@@ -285,7 +287,7 @@ footer strong {
 }
 
 #forside_container .citat {
-    font-size: 3em;
+    font-size: 2em;
     font-family: cursive;
     position: absolute;
     top: 115vw;
@@ -552,14 +554,17 @@ footer strong {
 
 /*######  LOOKBOOK   ######*/
 
-#lookbook {
-    background-color: #4b736d;
+#baggrund_fixed.lookbook {
+    background-image: url(img/texture-1893783_1920.jpg);
+
 }
+
 
 #lookbook h1 {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
     color: #fff;
+
 
 }
 
@@ -732,6 +737,7 @@ footer strong {
 
 #baggrund_fixed.kontakt {
     background-image: url(img/IMG_0407.JPG);
+
 }
 
 #kontakt {
@@ -740,7 +746,6 @@ footer strong {
 
 #info_box {
     padding: 20px;
-    background-color: rgba(90, 88, 88, 0.12);
     color: #e6e6e6;
     font-family: 'Roboto Slab', serif;
 
@@ -1143,9 +1148,13 @@ input {
         font-size: 3em;
         font-family: cursive;
         position: absolute;
-        top: 40vw;
+        top: 35vw;
         right: 90vw;
         background-color: rgba(0, 0, 0, 0);
+    }
+
+    #forside_container p {
+        font-size: 1.5em;
     }
     /* Produkter */
     #produkter {
@@ -1254,7 +1263,7 @@ input {
     #kontakt #map {
         width: 1200px;
         height: 300px;
-        margin: 20px auto;
+        margin: 0px 0px 0px 0px;
     }
 
     /* Kurv */
