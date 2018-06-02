@@ -219,12 +219,9 @@ footer {
     color: #ddd;
 }
 
-footer a {
-    text-decoration: underline;
-    font-family: 'Roboto Slab', serif;
-    color: #90bdbb;
 
-}
+
+
 
 a:hover {
     color: #ddd;
@@ -270,11 +267,13 @@ footer strong {
 
 #forside_container #tilmeld {
     position: absolute;
-
-    background-color: pink;
-
+    color: #ffffff;
+    background-color: #4b736d;
+    font-family: 'Roboto Slab', serif;
     padding: 10px;
-
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
     right: 0;
     top: 5vw;
 }
@@ -287,8 +286,9 @@ footer strong {
     top: 0;
     left: 0;
     z-index: 500;
-    background-color: rgba(0, 0, 0, 0.4);
+
 }
+
 
 #forside_container #popup.show {
     display: block;
@@ -301,6 +301,7 @@ footer strong {
     left: 0;
     top: 0;
     z-index: 501;
+
 }
 
 #forside_container #popup_vindue {
@@ -309,7 +310,7 @@ footer strong {
     top: 20%;
     position: absolute;
     margin: 0 auto;
-    background-color: #333;
+    background-color: #4b736d;
     padding: 20px;
     z-index: 503;
 }
@@ -322,6 +323,8 @@ footer strong {
 
 #forside_container #popup_vindue h2 {
     margin-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
 }
 
 #forside_container p {
@@ -1221,16 +1224,86 @@ input {
         font-size: 3em;
         font-family: cursive;
         position: absolute;
-        top: 35vw;
+        margin-top: 35vw;
         right: 90vw;
-        background-color: rgba(0, 0, 0, 0);
+
         font-weight: 300;
     }
 
     #forside_container p {
         font-size: 1.5em;
         font-weight: 300;
+        background-color: rgba(0, 0, 0, 0.18);
+
     }
+
+    #forside_container #tilmeld {
+        display: none;
+
+
+
+    }
+    #forside_container #popup_vindue h2 {
+        margin-left: 50%;
+        bottom: 350px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.18);
+    }
+    #forside_container #popup #tilmeldknap {
+        margin-left: 70%;
+        height: 50px;
+        width: 10%;
+        font-size: 1em;
+        bottom: 250px;
+        position: absolute;
+    }
+    #forside_container #popup #email {
+        margin-left: 50%;
+        height: 40px;
+        width: 200px;
+        bottom: 250px;
+        position: absolute;
+    }
+    #forside_container #popup {
+        display: block;
+        margin-left: 20%;
+
+
+
+
+    }
+    #forside_container #luk {
+        display: none;
+    }
+    #forside_container #popup_vindue {
+        width: 90%;
+        left: 5%;
+        top: 80%;
+        position: absolute;
+        margin: 0 auto;
+        background-color: rgba(75, 115, 109, 0);
+        padding: 20px;
+        z-index: 503;
+        margin-left: 10;
+
+    }
+
+    #forside_container #clickable {
+        display: none;
+    }
+    #forside_container button {
+        align-self: center;
+        background-color: #4b736d;
+        color: #ffffff;
+        border: 0;
+    }
+
+    #forside_container #popup_vindue h2 {
+        color: #ffffff;
+        margin-top: 15px;
+
+    }
+
     /* Produkter */
     #produkter {
         max-width: 1300px;

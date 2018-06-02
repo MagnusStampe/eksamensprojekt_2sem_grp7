@@ -1,6 +1,6 @@
 let startHtml = '<button id="luk">Luk</button><h2>Vil du holdes opdateret med nye events og produkter?</h2><input type="email" name="email" required placeholder="Din email"><br><button data-tilmeldBtn>Tilmeld</button>';
 
-let slutHtml = '<button id="luk">Luk</button><h2>Tak fordi du tilmeldte dig vores nyhedsbrev!</h2>';
+let slutHtml = '<button id="luk">Luk</button><h2>Tak fordi du tilmeldte dig <br> vores nyhedsbrev!</h2>';
 
 document.addEventListener("DOMContentLoaded", loaded);
 
