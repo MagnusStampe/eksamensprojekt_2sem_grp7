@@ -268,6 +268,62 @@ footer strong {
 
 }
 
+#forside_container #tilmeld {
+    position: absolute;
+
+    background-color: pink;
+
+    padding: 10px;
+
+    right: 0;
+    top: 5vw;
+}
+
+#forside_container #popup {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#forside_container #popup.show {
+    display: block;
+}
+
+#forside_container #clickable {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 501;
+}
+
+#forside_container #popup_vindue {
+    width: 90%;
+    left: 5%;
+    top: 20%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    z-index: 503;
+}
+
+#forside_container #popup_vindue #luk {
+    position: absolute;
+    right: 20px;
+    margin: 0;
+}
+
+#forside_container #popup_vindue h2 {
+    margin-top: 30px;
+}
+
 #forside_container p {
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -658,13 +714,29 @@ footer strong {
     color: #ffff;
     font-size: 1.7em;
     margin-top: 0;
-
-
 }
 
-#om .v_bracket.animate {
+#om .text_svg {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#om .logo_svg {
+    transition: 0.2s;
+}
+
+#om .lag:hover .text_svg {
+    opacity: 1;
+    transition: 1.8s transition-timing-function: cubic-bezier(0, 0, 1.0, 0.1);
+}
+
+#om .lag:hover .logo_svg {
+    opacity: 0;
+}
+
+#om .lag:hover .v_bracket {
     animation-name: v_bracket_kf;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
@@ -673,19 +745,17 @@ footer strong {
         transform: translateX(0);
     }
     50% {
-        transform: translateX(50px);
+        transform: translateX(10%);
     }
     100% {
         transform: translateX(0);
     }
 }
 
-#om .h_bracket.animate {
+#om .lag:hover .h_bracket {
     animation-name: h_bracket_kf;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
-    transition: 0.5s;
-    transform: translateX(0);
 }
 
 @keyframes h_bracket_kf {
@@ -693,29 +763,11 @@ footer strong {
         transform: translateX(0);
     }
     50% {
-        transform: translateX(-50px);
+        transform: translateX(-10%);
     }
     100% {
         transform: translateX(0);
     }
-}
-
-#om .logo_svg {
-    transition: 0.2s;
-}
-
-#om .logo_svg.animate {
-    opacity: 0;
-}
-
-#om .text_svg {
-    opacity: 0;
-    z-index: 2;
-    transition: 2s;
-}
-
-#om .text_svg.animate {
-    opacity: 1;
 }
 
 /*
@@ -767,13 +819,9 @@ footer strong {
 
 #kontakt_box input,
 #kontakt_box textarea {
-
-
     padding: 20px;
     transition: 0.5s;
     font-family: 'Roboto Slab', serif;
-
-
 }
 
 #kontakt_box .tilbage {
