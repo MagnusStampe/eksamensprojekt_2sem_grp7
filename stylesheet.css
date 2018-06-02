@@ -1066,9 +1066,32 @@ input {
     }
 
     #lag-10 {
-        transform: scale(0.3) translate(0%, 120%);
+        transform: scale(0.3) translate(-68.5%, 96%);
     }
 
+    #lag-11 {
+        transform: scale(0.3) translate(-34%, 113%);
+    }
+
+    #lag-12 {
+        transform: scale(0.3) translate(0%, 129%);
+    }
+
+    #lag-13 {
+        transform: scale(0.3) translate(-0.5%, 128%);
+    }
+
+    #lag-14 {
+        transform: scale(0.3) translate(-34.5%, 145%);
+    }
+
+    #lag-15 {
+        transform: scale(0.3) translate(-68.5%, 161%);
+    }
+
+    #lag-16 {
+        transform: scale(0.3) translate(-34.5%, 161%);
+    }
 
 }
 

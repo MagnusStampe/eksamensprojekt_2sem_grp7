@@ -10,7 +10,7 @@ function loaded() {
 }
 
 async function getSVG() {
-    let SVGdata = await fetch("img/svg_til_logo.svg");
+    let SVGdata = await fetch("img/svg_til_logo_text.svg");
     SVG = await SVGdata.text();
 
     indsaetSVG();
