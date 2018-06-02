@@ -679,6 +679,62 @@ footer strong {
 
 }
 
+#om .v_bracket.animate {
+    animation-name: v_bracket_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes v_bracket_kf {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#om .h_bracket.animate {
+    animation-name: h_bracket_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    transition: 0.5s;
+    transform: translateX(0);
+}
+
+@keyframes h_bracket_kf {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#om .logo_svg {
+    transition: 0.2s;
+}
+
+#om .logo_svg.animate {
+    opacity: 0;
+}
+
+#om .text_svg {
+    opacity: 0;
+    z-index: 2;
+    transition: 2s;
+}
+
+#om .text_svg.animate {
+    opacity: 1;
+}
+
 /*
 #om button {
 
