@@ -362,6 +362,11 @@ footer strong {
 
 /*######  PRODUKTER  ######*/
 
+#baggrund_fixed .produkter {
+    position: absolute;
+    margin-bottom: 20px;
+}
+
 #produkter h1 {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
@@ -372,24 +377,24 @@ footer strong {
 
 #produkter a {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 1px;
     font-family: 'Roboto Slab', serif;
     padding: 5px;
-    bottom: 320px;
+    bottom: 120px;
     position: absolute;
-    margin-left: 1px;
+    margin-left: 15px;
 
 }
 
 #produkter p {
     position: absolute;
     color: #ffffff;
-    font-size: 1.2em;
-    margin-left: 1px;
+    font-size: 1em;
+    margin-left: 10px;
     font-family: 'Roboto Slab', serif;
     padding: 10px;
-    bottom: 320px;
+    bottom: 130px;
 }
 
 #produkter #slideshow {
@@ -579,6 +584,8 @@ footer strong {
 #produkt #dest img {
     transform: scale(1.1);
     margin: 0;
+
+
 }
 
 #produkt #dest .navn,
@@ -612,17 +619,31 @@ footer strong {
     top: 40px;
     font-size: 1.3em;
     font-weight: 700;
+    font-family: 'Cinzel', serif;
 }
+
 
 #produkt #dest .materialer {
     top: 5.6em;
-    font-style: italic;
+    font-family: 'Roboto Slab', serif;
     width: 80%;
 }
 
 #produkt #dest .pris {
     bottom: 2em;
     font-size: 1.2em;
+    font-family: 'Roboto Slab', serif;
+}
+
+#produkt .navn {
+    font-family: 'Cinzel', serif;
+}
+
+#produkt .pris,
+materialer,
+h2,
+p {
+    font-family: 'Roboto Slab', serif;
 }
 
 /*######  LOOKBOOK   ######*/
@@ -637,6 +658,7 @@ footer strong {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
     color: #fff;
+    margin-top: 150px;
 
 
 }
@@ -696,9 +718,12 @@ footer strong {
 
 #om #kasper {
 
-    width: 100%;
-    height: 100%;
-    margin-top: 30vw;
+    width: 130vw;
+    height: 90vw;
+    margin-top: 50px;
+
+
+
 
 
 
@@ -844,6 +869,7 @@ footer strong {
 #om #videoer.selected {
     display: block;
 }
+
 
 /*###  RÅDG. OG KONT.   ###*/
 
@@ -1372,17 +1398,17 @@ input {
 
     #forside_container #popup_vindue h2 {
         margin-left: 50%;
-        bottom: 350px;
+        bottom: 80px;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.18);
     }
 
     #forside_container #popup #tilmeldknap {
         margin-left: 70%;
-        height: 50px;
+        height: 40px;
         width: 10%;
         font-size: 1em;
-        bottom: 250px;
+        bottom: 35px;
         position: absolute;
     }
 
@@ -1390,13 +1416,18 @@ input {
         margin-left: 50%;
         height: 40px;
         width: 200px;
-        bottom: 250px;
+        bottom: 35px;
         position: absolute;
+        font-size: 1em;
     }
 
     #forside_container #popup {
         display: block;
         margin-left: 20%;
+        height: 50%;
+        top: 70px;
+        position: absolute;
+
     }
 
     #forside_container #luk {
@@ -1433,24 +1464,54 @@ input {
 
     }
     /* Produkter */
+    #baggrund_fixed .produkter {
+        position: absolute;
+        margin-bottom: 20px;
+    }
     #produkter {
         max-width: 1300px;
+
 
     }
 
     #produkter h1 {
-        margin-top: 200px;
+        margin-top: 100px;
+    }
+
+    #produkter a {
+        color: #ffffff;
+        font-size: 1.2em;
+        margin-left: 1px;
+        font-family: 'Roboto Slab', serif;
+        padding: 5px;
+        bottom: 320px;
+        position: absolute;
+        margin-left: 10px;
+
+    }
+
+    #produkter p {
+        position: absolute;
+        color: #ffffff;
+        font-size: 1.2em;
+        margin-left: 1px;
+        font-family: 'Roboto Slab', serif;
+        padding: 12px;
+        bottom: 320px;
     }
 
     #slideshow {
         max-width: 1400px;
         left: 0;
 
+
     }
 
     #produkter .slide {
         height: 600px;
-        margin-top: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
 
     #produkter .but {
@@ -1560,6 +1621,7 @@ input {
         width: 100px;
         height: 40px;
         font-size: 1.2em;
+        margin-top: 60px;
     }
     #lookbook .sort_btn.selected {
         width: 130px;
@@ -1576,7 +1638,9 @@ input {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #lookbook h1 {}
+    #lookbook h1 {
+        margin-top: 200px;
+    }
 
     /* Om os */
     #om #kasper {
@@ -1635,6 +1699,27 @@ input {
     #om #videoer_btn {
         top: 75px;
     }
+
+    #om #videoer.selected {
+
+        width: 80%;
+        height: 80%;
+        display: grid;
+
+        grid-template-columns: 20% 20% 20%;
+        grid-template-rows: 20% 20% 20%;
+        grid-column-gap: 20%;
+
+
+    }
+
+    #om #videoer.selected iframe {
+        width: 35vw;
+        height: 25vw;
+    }
+
+
+
 }
 
 
