@@ -412,7 +412,7 @@ footer strong {
     width: 10vw;
     top: 28.5vw;
 
-    background-color: #4b736d;
+    background-color: rgba(75, 115, 109, 0.65);
     border: none;
 
     background-image: url(img/pil.svg);
@@ -708,6 +708,7 @@ p {
 
 #lookbook #privat {
     top: 20vw;
+
 }
 
 #lookbook #erhverv {
@@ -721,7 +722,7 @@ p {
 }
 
 #lookbook .dest img {
-    margin: 5px 0;
+    margin: 5px 0px;
 }
 
 /*########  OM OS   #######*/
