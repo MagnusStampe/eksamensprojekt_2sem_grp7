@@ -1311,6 +1311,11 @@ input {
         grid-area: 1;
     }
 
+
+    footer address {
+        margin-top: 1em;
+    }
+
     /* Navigation menu (Becomming the header)*/
     #burger {
         display: none;
