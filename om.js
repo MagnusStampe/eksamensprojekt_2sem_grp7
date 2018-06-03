@@ -138,7 +138,3 @@ function animateSVG() {
         x++;
     }
 }
-
-function mouseOver1() {
-    console.log("hej")
-}
