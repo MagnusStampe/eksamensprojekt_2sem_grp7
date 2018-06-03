@@ -733,32 +733,24 @@ p {
 
 #om #kasper {
 
-    width: 130vw;
+    width: 100%;
     height: 90vw;
     margin-top: 50px;
-
-
-
-
-
-
 }
 
 #om iframe {
-    width: 100vw;
-    display: grid;
+    width: 90vw;
+    height: 60vw;
     padding: 5vw;
-    grid-template-columns: 1fr, 1fr;
-
+    margin: 0 auto;
+    display: block;
 }
 
 #om #om_kasper {
     padding: 20px 20px;
     background-color: rgba(118, 122, 125, 0.46);
     color: #ffffff;
-
     background-size: cover;
-
 }
 
 #om #om_kasper p {
@@ -768,9 +760,6 @@ p {
     font-size: 1em;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-
-
-
 }
 
 #om h1 {
@@ -1175,11 +1164,11 @@ input {
     /*#######  TABLET   #######*/
     /* Header */
     #header_bar {
-        height: 30vw;
+        height: 22vw;
     }
     #produkter #slideshow {
         height: 600px;
-        margin-top: 5px;
+        margin-top: 22vw;
     }
     header.include img {
         width: 22vw;
@@ -1191,10 +1180,7 @@ input {
         width: 8vw;
         height: 8vw;
     }
-    #produkter #dest {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    }
     #burger div {
         width: 6vw;
         height: 0.8vw;
@@ -1212,6 +1198,11 @@ input {
     /* Produkter */
     #produkter #dest {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #produkter #dest {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
     }
 
     /* Produkt */
@@ -1648,6 +1639,10 @@ input {
     }
     #lookbook .sort_btn.selected {
         width: 130px;
+    }
+
+    #lookbook h1 {
+        margin-bottom: 130px;
     }
 
     #lookbook #privat {
