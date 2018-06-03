@@ -227,7 +227,7 @@ footer a:hover {
 footer p,
 footer address {
     font-family: 'Roboto Slab', serif;
-    margin-top: 0.5px;
+    margin-bottom: 10px;
 }
 
 footer strong {
@@ -674,9 +674,7 @@ p {
     font-family: 'Cinzel', serif;
     font-size: 1.7em;
     color: #fff;
-    margin-top: 150px;
-
-
+    margin-top: 35vw;
 }
 
 #lookbook .sort_btn {

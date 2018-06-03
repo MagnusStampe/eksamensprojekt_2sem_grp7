@@ -14,7 +14,7 @@ function loaded() {
 }
 
 async function hentJson() {
-    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/produkterne");
+    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/acf/v3/produkterne?filter[orderby]=modified&per_page=100");
     produkter = await jsonData.json();
 
     visProdukter();

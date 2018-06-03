@@ -7,7 +7,7 @@ let media2 = window.matchMedia("(max-width: 1300px)");
 document.addEventListener("DOMContentLoaded", hentJson);
 
 async function hentJson() {
-    let jsonData = await fetch("http://www.magnusstampe.dk/2sem_eksamen/wp/wp-json/wp/v2/lookbook");
+    let jsonData = await fetch("http://magnusstampe.dk/2sem_eksamen/wp/wp-json/acf/v3/lookbook?filter[orderby]=modified&per_page=100");
     billeder = await jsonData.json();
 
     jsonInput();
